@@ -1,0 +1,2 @@
+
+auth = 'https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?response_type=code&client_id=262006177488-3425ks60hkk80fssi9vpohv88g6q1iqd.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2F&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive&state=HNE42H9GjtsuRRpN0RLXiFo3Ispy2c&access_type=offline&service=lso&o2v=1&flowName=GeneralOAuthFlow'

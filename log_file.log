@@ -1,0 +1,40 @@
+2023-11-25 23:58:06,051 Guardian: CRITICAL A automação do Dante parou.
+2023-11-25 23:59:04,705 Guardian: CRITICAL A automação do Dante parou.
+2023-11-25 23:59:56,361 Guardian: CRITICAL A automação do Dante parou.
+2023-11-26 00:02:06,612 Guardian: CRITICAL A automação do Dante parou.
+2023-11-26 00:04:38,711 Guardian: CRITICAL A automação do Dante parou.
+2023-11-26 00:05:04,651 Guardian: CRITICAL A automação do Dante parou.
+2023-11-26 12:41:45,900 Guardian: ERROR read_file method from GSheetDataLoader: : [Errno 2] No such file or directory: 'G:\\Drives compartilhados\\Data & Performance\\Relatórios de Growth\\1 - PERFORMANCE\\funnel\\Cupom All.cssv'
+2023-11-26 12:41:47,526 Guardian: CRITICAL A automação do Dante parou.
+2023-11-26 17:57:44,739 Guardian: INFO load_to_gsheets from GSheetDataLoader: Cupom All 
+                                         data was successfully loaded to Google Sheet.
+2023-11-26 17:58:01,871 Guardian: INFO load_to_gsheets from GSheetDataLoader: Cupom All 
+                                         data was successfully loaded to Google Sheet.
+2023-11-26 18:00:21,229 Guardian: ERROR ProcessRunner: Error for Avanço do Dia Por Armazém SD in (Metabase Script). Execution time: 0 minutes and 14 seconds. Started at 18H:00M:06S and finished at 18H:00M:21S.
+2023-11-26 20:28:44,893 Guardian: INFO load_to_gsheets from GSheetDataLoader: Cupom All 
+                                         data was successfully loaded to Google Sheet.
+2023-11-26 20:32:34,321 Guardian: INFO load_to_gsheets from GSheetDataLoader: Cupom All 
+                                         data was successfully loaded to Google Sheet.
+2023-11-26 20:32:34,321 Guardian: INFO load_to_gsheets from GSheetDataLoader: Cupom All 
+                                         data was successfully loaded to Google Sheet.
+2023-11-26 21:05:16,033 Guardian: INFO load_to_gsheets from GSheetDataLoader: Cupom All 
+                                         data was successfully loaded to Google Sheet.
+2023-11-27 19:12:32,251 Guardian: ERROR Exception from main module: list indices must be integers or slices, not tuple
+2023-11-27 19:12:33,675 Guardian: CRITICAL A automação do Dante parou.
+2023-11-27 19:15:43,835 Guardian: INFO load_to_gsheets from GSheetDataLoader: Funnel Audiência - Web data was successfully loaded to Google Sheet.
+2023-11-27 19:15:48,007 Guardian: INFO load_to_gsheets from GSheetDataLoader: Funnel Audiência - IOS data was successfully loaded to Google Sheet.
+2023-11-27 19:15:53,125 Guardian: INFO load_to_gsheets from GSheetDataLoader: Funnel Audiência - Android data was successfully loaded to Google Sheet.
+2023-11-27 19:15:57,354 Guardian: INFO load_to_gsheets from GSheetDataLoader: Tabla Conversion Diária Br data was successfully loaded to Google Sheet.
+2023-11-27 19:16:02,269 Guardian: INFO load_to_gsheets from GSheetDataLoader: Cupom All data was successfully loaded to Google Sheet.
+2023-11-27 19:16:53,973 Guardian: INFO load_to_gsheets from GSheetDataLoader: Apps Flyer - Android data was successfully loaded to Google Sheet.
+2023-11-27 19:17:33,666 Guardian: INFO load_to_gsheets from GSheetDataLoader: Apps Flyer - IOS data was successfully loaded to Google Sheet.
+2023-11-27 19:20:11,113 Guardian: INFO load_to_gsheets from GSheetDataLoader: Cupom All data was successfully loaded to Google Sheet.
+2023-11-27 19:26:12,698 Guardian: INFO load_to_gsheets from GSheetDataLoader: Gestão À Vista MX data was successfully loaded to Google Sheet.
+2023-11-27 19:35:38,916 Guardian: ERROR Exception from main module: type object 'MachineInfo' has no attribute 'pathlang0'
+2023-11-27 19:35:39,360 Guardian: CRITICAL A automação do Dante parou.
+2023-11-27 19:37:23,288 Guardian: ERROR Exception from main module: type object 'MachineInfo' has no attribute 'pathlang0'
+2023-11-27 19:37:24,397 Guardian: CRITICAL A automação do Dante parou.
+2023-11-27 19:39:49,669 Guardian: INFO load_to_gsheets from GSheetDataLoader: Base LG data was successfully loaded to Google Sheet.
+2023-11-27 19:47:24,812 Guardian: INFO load_to_gsheets from GSheetDataLoader: GMV Delivery - All Bases data was successfully loaded to Google Sheet.
+2023-11-27 19:51:47,337 Guardian: INFO load_to_gsheets from GSheetDataLoader: Base LG data was successfully loaded to Google Sheet.
+2023-11-27 19:53:28,915 Guardian: INFO load_to_gsheets from GSheetDataLoader: Cupom All - MX data was successfully loaded to Google Sheet.

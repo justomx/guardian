@@ -1,0 +1,49 @@
+import pyodbc
+import pandas as pd
+from plconfig import MachineInfo as machine_info,SecInfo as sec
+from datetimetools import Alternative_date_variables as ad
+import os
+from azure.storage.blob import BlobServiceClient
+from datetime import timedelta
+from datetime import datetime
+from verifiers import send_message
+ 
+pss = sec().snf_pss
+
+conn_str = f"DSN=Snowflake;UID=VINICIUS_RIBEIRO;PWD={pss};"
+conn = pyodbc.connect(conn_str)
+
+query = """
+SELECT * 
+
+FROM BR_JUSTO_PROD.SANDBOX.INVENTORY_STATUS_STOCK_DATA_UNILEVER_CURRENT_MONTH
+
+;
+"""
+
+df = pd.read_sql(query, conn)
+
+file = str(r'G:'+machine_info().pathlang0+r'\Data & Performance\Relatórios Justo Insights\UNILEVER\envios estoque\2023-'+str((datetime.today() - timedelta(days=1)).strftime('%m'))+r'.csv')
+df.to_csv(file,index=False)
+
+conn.close()
+
+sas_url = sec().sas_url_unilever 
+blob_service_client = BlobServiceClient(account_url=sas_url)
+
+files = [file]
+
+try:
+    for each in files:
+        blob_name = os.path. basename(each)
+        blob_client = blob_service_client.get_blob_client(container='envios estoque', blob=blob_name)
+
+        with open(each, 'rb') as data:
+            blob_client.upload_blob(data, overwrite=True)
+
+        print("Unilever stock file succesfully uploaded ("+str(each)+").")
+
+except Exception as e:
+    e9="<!channel> Unilever stock file didn't uploaded. Details: "+"\n\n"+str(e)
+    print(e9)
+    send_message(e9,'bot_channel')
