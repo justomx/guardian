@@ -5,6 +5,8 @@ from verifiers import process_registrant
 import gspread 
 import gspread_dataframe as gd
 from oauth2client.service_account import ServiceAccountCredentials
+import pyodbc
+from plconfig import SecInfo as sec
 
 class FileTransformer:
     
@@ -106,3 +108,36 @@ class PhatomReport:
     def __init__(self,name,path):
         self.name = name
         self.default_destination_path = [path]
+
+class SnowFlakeToDF:
+
+    def __init__(self,query):
+        self.query=query
+
+    def connect_to_sf(self):
+        conn_str = f"DSN=Snowflake;UID=VINICIUS_RIBEIRO;PWD={sec().snf_pss};"
+        try:
+            conn = pyodbc.connect(conn_str)
+            return conn
+        except Exception as e:
+            process_registrant.register_error(f'connect_to_sf method from SnowFlakeToDF: : {e}')
+            return None
+
+    def create_df(self):
+        conn = self.connect_to_sf()
+        if conn is not None:
+            try:
+                df = pd.read_sql(self.query,conn)
+                return df
+            except Exception as e:
+                process_registrant.register_error(f'create_df method from SnowFlakeToDF: {e}')
+                return None
+        else:
+            return None
+    
+    def df_to_csv(self,file,index=False):
+        df = self.create_df()
+        if df is not None:
+            df.to_csv(file,index=index)
+        else:
+            process_registrant.register_error(f'df_to_csv method from SnowFlakeToDF: Dataframe is none')

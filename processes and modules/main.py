@@ -175,7 +175,7 @@ try:
 
     managermb= Manager()
     switch = managermb.switch
-    reportst = ReportGroup()  
+    reportst = ReportGroup() 
 
     def workdays():
         e='etl_routines'

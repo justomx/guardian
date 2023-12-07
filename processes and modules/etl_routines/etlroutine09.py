@@ -7,12 +7,8 @@ from azure.storage.blob import BlobServiceClient
 from datetime import timedelta
 from datetime import datetime
 from verifiers import send_message
+from etltools import SnowFlakeToDF
  
-pss = sec().snf_pss
-
-conn_str = f"DSN=Snowflake;UID=VINICIUS_RIBEIRO;PWD={pss};"
-conn = pyodbc.connect(conn_str)
-
 query = """
 SELECT * 
 
@@ -21,12 +17,10 @@ FROM BR_JUSTO_PROD.SANDBOX.INVENTORY_STATUS_STOCK_DATA_UNILEVER_CURRENT_MONTH
 ;
 """
 
-df = pd.read_sql(query, conn)
-
 file = str(r'G:'+machine_info().pathlang0+r'\Data & Performance\Relatórios Justo Insights\UNILEVER\envios estoque\2023-'+str((datetime.today() - timedelta(days=1)).strftime('%m'))+r'.csv')
-df.to_csv(file,index=False)
 
-conn.close()
+myclass = SnowFlakeToDF(query)
+myclass.df_to_csv(file,False)
 
 sas_url = sec().sas_url_unilever 
 blob_service_client = BlobServiceClient(account_url=sas_url)
@@ -47,3 +41,5 @@ except Exception as e:
     e9="<!channel> Unilever stock file didn't uploaded. Details: "+"\n\n"+str(e)
     print(e9)
     send_message(e9,'bot_channel')
+
+
