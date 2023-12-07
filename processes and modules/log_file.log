@@ -4153,3 +4153,13 @@
 2023-11-24 20:05:21,559 Guardian: CRITICAL A automação do Dante parou.
 2023-11-24 20:06:13,829 Guardian: CRITICAL A automação do Dante parou.
 2023-11-24 20:25:21,131 Guardian: ERROR ProcessRunner: Error for Cupom All - MX in (Metabase Script). Execution time: 0 minutes and 14 seconds. Started at 20H:25M:06S and finished at 20H:25M:21S.
+2023-12-07 08:42:26,771 Guardian: ERROR Exception from main module: C:\Program Files\Tesseract-OCR\tesseract.exe is not installed or it's not in your PATH. See README file for more information.
+2023-12-07 08:42:27,832 Guardian: CRITICAL A automação do Dante parou.
+2023-12-07 08:46:36,502 Guardian: INFO ProcessRunner: Gestão À Vista MX extraction started at 08H:45M:55S finished at 08H:46M:36S. Execution time: 0 minutes and 41 seconds.
+2023-12-07 08:46:36,502 Guardian: INFO ProcessRunner: Gestão À Vista MX extraction started at 08H:45M:55S finished at 08H:46M:36S. Execution time: 0 minutes and 41 seconds.
+2023-12-07 08:56:34,911 Guardian: INFO ProcessRunner: Gestão À Vista MX extraction started at 08H:55M:59S finished at 08H:56M:34S. Execution time: 0 minutes and 35 seconds.
+2023-12-07 08:56:34,911 Guardian: INFO ProcessRunner: Gestão À Vista MX extraction started at 08H:55M:59S finished at 08H:56M:34S. Execution time: 0 minutes and 35 seconds.
+2023-12-07 08:58:59,427 Guardian: INFO ProcessRunner: Gestão À Vista MX extraction started at 08H:58M:24S finished at 08H:58M:59S. Execution time: 0 minutes and 35 seconds.
+2023-12-07 09:08:33,400 Guardian: INFO load_to_gsheets from GSheetDataLoader: Produtos Ifood - SD data was successfully loaded to Google Sheet.
+2023-12-07 09:08:41,613 Guardian: INFO load_to_gsheets from GSheetDataLoader: Produtos Ifood - NM data was successfully loaded to Google Sheet.
+2023-12-07 09:08:41,631 Guardian: INFO Workdays Mode

@@ -105,7 +105,7 @@ class ProcessRegistrant:
 
     def call_critical(self):
         self.logger.critical(self.crt)
-        send_message('CRITICAL ERROR - <!channel> the automatization management has stopped.', 'bot_channel')
+        send_message('CRITICAL ERROR - The process automation management has stopped  <!channel> .', 'bot_channel')
         # shutil.copy(self.src,self.des)
 
     def register_info(self, info):

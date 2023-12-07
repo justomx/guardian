@@ -7,7 +7,7 @@ from plconfig import MachineInfo
 import time
 from pytesseract import pytesseract
 import time
-from verifiers import ProcessRegistrant as pr
+from verifiers import process_registrant
 from datetimetools import Timer
 #from apitools import load_to_gsheets
 from datetimetools import Alternative_date_variables
@@ -21,7 +21,8 @@ pyautogui.FAILSAFE = False
 """
 
 path_to_tesseract = (
-    r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+    #r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+    r"C:\Users\vinicius.ribeiro_sou\AppData\Local\Programs\Tesseract-OCR\tesseract.exe"
 )
 
 pytesseract.tesseract_cmd = path_to_tesseract
@@ -316,8 +317,7 @@ class ProcessRunner:
                 + self.timer.finish
                 + "."
             )
-            pr().register_error(errr1)
-            print(errr1)
+            process_registrant.register_error(errr1)
 
         else:
             self.timer.finish_count()
@@ -330,8 +330,7 @@ class ProcessRunner:
                 + self.timer.finish
                 + f". Execution time: {int(self.timer.minutes)} minutes and {int(self.timer.seconds)} seconds."
             )
-            pr().register_info(finish_message)
-            print(finish_message)
+            process_registrant.register_info(finish_message)
             
     def download_locus(self):
         

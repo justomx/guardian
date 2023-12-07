@@ -175,14 +175,14 @@ try:
 
     managermb= Manager()
     switch = managermb.switch
-    reportst = ReportGroup()    
-    
+    reportst = ReportGroup()  
+
     def workdays():
         e='etl_routines'
         v='validations'
         cl=FolderUpperCleaner()
         
-        print('Workdays Mode')
+        process_registrant.register_info('Workdays Mode')
         schedule.every().day.at("00:00").do(managermb.errors_reset)
         schedule.every().day.at("00:05").do(switch,reportst.funil_de_ops)
         schedule.every().day.at("00:30").do(switch,[rs.MReport43])  
