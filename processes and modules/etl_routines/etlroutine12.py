@@ -5,11 +5,12 @@ import os
 from azure.storage.blob import BlobServiceClient
 from verifiers import send_message
 from etltools import PhatomReport,FileToGSheets,SnowFlakeToDF
- 
-query = """
+
+i=sec()
+query = f"""
 SELECT * 
 
-FROM BR_JUSTO_PROD.SANDBOX.PLACED_SALES_BY_CLUSTER
+FROM {pc_sales}BR_JUSTO_PROD.SANDBOX.PLACED_SALES_BY_CLUSTER
 
 ;
 """
@@ -22,3 +23,4 @@ data.df_to_csv(file,False)
 placed_data_allbases_report = PhatomReport('Base LG',file)
 placed_data_load = FileToGSheets(placed_data_allbases_report,'1QBPcfxqucGalXPUYtetpACbspa58DN1rcaYRVqZHW1Q','Placed',True)
 placed_data_load.force_load()
+i=''

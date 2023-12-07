@@ -8,12 +8,12 @@ from datetime import timedelta
 from datetime import datetime
 from verifiers import send_message
 from etltools import SnowFlakeToDF
- 
-query = """
+from plconfig import SecInfo as sec
+
+i=sec()
+query = f"""
 SELECT * 
-
-FROM BR_JUSTO_PROD.SANDBOX.INVENTORY_STATUS_STOCK_DATA_UNILEVER_CURRENT_MONTH
-
+FROM {i.u_stock}
 ;
 """
 
@@ -42,4 +42,4 @@ except Exception as e:
     print(e9)
     send_message(e9,'bot_channel')
 
-
+i=''

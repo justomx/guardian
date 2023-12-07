@@ -1,42 +1,46 @@
-
-#to install paramiko use pip install paramiko
 import paramiko
+from etltools import SnowFlakeToDF
+import os
+from datetimetools import Alternative_date_variables
+from plconfig import SecInfo as sec
 
-# doc https://docs.paramiko.org/en/2.2/api/sftp.html
+date = Alternative_date_variables().month_year
+i=sec()
 
-#Enable if you want log transaction
-#paramiko_log = "paramiko.log"
-#paramiko.util.log_to_file("paramiko_log")
+host = i.a_host
+username = i.a_user
+pk_file_path = i.apk_path
 
-#Must only use hostname and not http or https
-host = "s-1cdbdac097ec48bfb.server.transfer.us-east-1.amazonaws.com"
-        
-#SFTP username
-username = "user-justo"
+list=[
+ [f'SELECT * FROM {i.a_product};',str(i.p1+'_product_'+date+'.csv')]
+,[f'SELECT * FROM {i.a_stock};',str(i.p1+'_stock_'+date+'.csv')]
+#,[f'SELECT * FROM {i.a_sellout};',str(i.p1+'_sellout_'+date+'.csv')]
+,[f'SELECT * FROM {i.a_warehouse};',str(i.p1+'_warehouse.csv')]]
 
-#The private key file path, either use full file path or the file name is the file in the same folder of that script
-private_key_file_path = 'C:/Users/vinicius.ribeiro_sou/.ssh/id_ed25519'
+for query,path in list:
+    data = SnowFlakeToDF(query)
+    data.df_to_csv(path,False)
+    
+for query, path in list:
 
-#local file path, either use full file path or the file name is the file in the same folder of that script
-local_file_path = 'teste.txt'
+    file = os.path.basename(path)
+    
+    local_file_path = path
+    remote_file_path = file
 
-#remote file path, either use full file path or the file name is the file in the same folder of that script
-remote_file_path = 'teste.txt'
+    pk = paramiko.Ed25519Key.from_private_key_file(pk_file_path) 
+    
+    ssh = paramiko.SSHClient()
+    ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
-private_key = paramiko.Ed25519Key.from_private_key_file(private_key_file_path) 
-  
-ssh = paramiko.SSHClient()
-ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-#Try/Catch, if connection fails, an exception will be raised
-try:
-    #Open SFTP Connection using paramiko SSHClient
-    ssh.connect(hostname=host, port=22, username=username, pkey=private_key)
-    sftp = ssh.open_sftp()
-    #Execute a Put command that will upload a local file to a remote path in SFTP
-    files = sftp.put(local_file_path, remote_file_path)
-    print(sftp.listdir())
-    #Closes SFTP and Connection
-    sftp.close()
-    ssh.close() 
-except Exception as e:
-    print(e, ' - Exception Raised!')
+    try:
+        ssh.connect(hostname=host, port=22, username=username, pkey=pk)
+        sftp = ssh.open_sftp()
+        files = sftp.put(local_file_path, remote_file_path)
+        print(sftp.listdir())
+        sftp.close()
+        ssh.close()  
+    except Exception as e:
+        print(e, ' - Exception Raised!')
+    os.remove(local_file_path)
+i=''

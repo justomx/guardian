@@ -172,10 +172,15 @@ try:
         runpy.run_path(path_name=e+'/etlroutine10.py') # ambev sales file upload
         runpy.run_path(path_name=e+'/etlroutine12.py') # placed orders upload to gsheets
         runpy.run_path(path_name=e+'/etlroutine15.py') # ifood products info
+        runpy.run_path(path_name=e+'/etlroutine16.py') # amicci
 
     managermb= Manager()
     switch = managermb.switch
+
     reportst = ReportGroup() 
+
+    e='etl_routines'
+    runpy.run_path(path_name=e+'/etlroutine09.py')
 
     def workdays():
         e='etl_routines'

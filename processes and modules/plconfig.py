@@ -91,6 +91,16 @@ class SecInfo:
         self.sas_url_unilever = self.config.get('UNILEVER_BLOB_ADDRESS_TO_CODE')
         self.sas_url_ambev    = self.config.get('AMBEV_BLOB_ADDRESS_TO_CODE')
         self.snf_pss          = self.config.get('SNF_PSS')
+        self.a_sellout        = self.config.get('A_SELLOUT')
+        self.a_stock          = self.config.get('A_STOCK')
+        self.a_product        = self.config.get('A_PRODUCT')
+        self.a_warehouse      = self.config.get('A_WAREHOUSE')
+        self.a_host           = self.config.get('A_HOST')
+        self.a_user           = self.config.get('A_USER')
+        self.apk_path         = self.config.get('APK_PATH')
+        self.p1               = self.config.get('p_1')
+        self.u_stock          = self.config.get('U_STOCK')
+        self.pc_sales         = self.config.get('PC_SALES')
 
     def _read_secret(self, filepath):
         try:

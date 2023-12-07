@@ -4177,3 +4177,114 @@
 2023-12-07 11:58:21,524 Guardian: INFO Workdays Mode
 2023-12-07 12:02:10,448 Guardian: INFO load_to_gsheets from GSheetDataLoader: Base LG data was successfully loaded to Google Sheet.
 2023-12-07 12:02:10,483 Guardian: INFO Workdays Mode
+2023-12-07 14:25:46,801 Guardian: ERROR create_df method from SnowFlakeToDF: Execution failed on sql 'SELECT * FROM BR_JUSTO_PROD.SANDBOX.AMMICI_PRODUCT': ('42S02', "[42S02] SQL compilation error:\nObject 'BR_JUSTO_PROD.SANDBOX.AMMICI_PRODUCT' does not exist or not authorized. (2003) (SQLExecDirectW)")
+2023-12-07 14:25:48,197 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 14:25:49,453 Guardian: ERROR create_df method from SnowFlakeToDF: Execution failed on sql 'SELECT * FROM BR_JUSTO_PROD.SANDBOX.AMMICI_STOCK': ('42S02', "[42S02] SQL compilation error:\nObject 'BR_JUSTO_PROD.SANDBOX.AMMICI_STOCK' does not exist or not authorized. (2003) (SQLExecDirectW)")
+2023-12-07 14:25:49,792 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 14:25:51,010 Guardian: ERROR create_df method from SnowFlakeToDF: Execution failed on sql 'SELECT * FROM BR_JUSTO_PROD.SANDBOX.AMMICI_WAREHOUSE': ('42S02', "[42S02] SQL compilation error:\nObject 'BR_JUSTO_PROD.SANDBOX.AMMICI_WAREHOUSE' does not exist or not authorized. (2003) (SQLExecDirectW)")
+2023-12-07 14:25:51,353 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 14:25:51,690 Guardian: INFO Workdays Mode
+2023-12-07 14:26:43,081 Guardian: ERROR create_df method from SnowFlakeToDF: Execution failed on sql 'SELECT * FROM BR_JUSTO_PROD.SANDBOX.AMMICI_PRODUCT': ('42S02', "[42S02] SQL compilation error:\nObject 'BR_JUSTO_PROD.SANDBOX.AMMICI_PRODUCT' does not exist or not authorized. (2003) (SQLExecDirectW)")
+2023-12-07 14:26:43,500 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 14:26:44,806 Guardian: ERROR create_df method from SnowFlakeToDF: Execution failed on sql 'SELECT * FROM BR_JUSTO_PROD.SANDBOX.AMMICI_STOCK': ('42S02', "[42S02] SQL compilation error:\nObject 'BR_JUSTO_PROD.SANDBOX.AMMICI_STOCK' does not exist or not authorized. (2003) (SQLExecDirectW)")
+2023-12-07 14:26:45,133 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 14:26:46,355 Guardian: ERROR create_df method from SnowFlakeToDF: Execution failed on sql 'SELECT * FROM BR_JUSTO_PROD.SANDBOX.AMMICI_WAREHOUSE': ('42S02', "[42S02] SQL compilation error:\nObject 'BR_JUSTO_PROD.SANDBOX.AMMICI_WAREHOUSE' does not exist or not authorized. (2003) (SQLExecDirectW)")
+2023-12-07 14:26:46,697 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 14:26:47,051 Guardian: INFO Workdays Mode
+2023-12-07 14:28:21,229 Guardian: ERROR create_df method from SnowFlakeToDF: Execution failed on sql 'SELECT * FROM BR_JUSTO_PROD.SANDBOX.AMMICI_PRODUCT': ('42S02', "[42S02] SQL compilation error:\nObject 'BR_JUSTO_PROD.SANDBOX.AMMICI_PRODUCT' does not exist or not authorized. (2003) (SQLExecDirectW)")
+2023-12-07 14:28:21,730 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 14:28:23,082 Guardian: ERROR create_df method from SnowFlakeToDF: Execution failed on sql 'SELECT * FROM BR_JUSTO_PROD.SANDBOX.AMMICI_STOCK': ('42S02', "[42S02] SQL compilation error:\nObject 'BR_JUSTO_PROD.SANDBOX.AMMICI_STOCK' does not exist or not authorized. (2003) (SQLExecDirectW)")
+2023-12-07 14:28:23,428 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 14:30:41,775 Guardian: ERROR create_df method from SnowFlakeToDF: ('HY000', "[HY000] [Snowflake][Snowflake] (25) \n      Result download worker error: Worker error: [Snowflake][Snowflake] (4) \n      REST request for URL https://sfc-va3-ds1-7-customer-stage.s3.amazonaws.com/ia210000-s/results/01b0d55a-0604-dbc3-0019-e30715b0ac02_0/main/data_0_1_1?x-amz-server-side-encryption-customer-algorithm=AES256&response-content-encoding=gzip&AWSAccessKeyId=AKIAXRKZUZXRXGELLRMR&Expires=1701991819&Signature=GElRJlnLuTdJXsEiP4g%2FNmDAjLw%3D failed: CURLerror (curl_easy_perform() failed) - code=35 msg='SSL connect error' osCode=10054 osMsg='Unknown error'.\n    \n     (25) (SQLFetch)")
+2023-12-07 14:30:42,843 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 14:39:32,834 Guardian: ERROR create_df method from SnowFlakeToDF: ('HY000', "[HY000] [Snowflake][Snowflake] (25) \n      Result download worker error: Worker error: [Snowflake][Snowflake] (4) \n      REST request for URL https://sfc-va3-ds1-7-customer-stage.s3.amazonaws.com/ia210000-s/results/01b0d55a-0604-dbc3-0019-e30715b0ac02_0/main/data_0_0_0?x-amz-server-side-encryption-customer-algorithm=AES256&response-content-encoding=gzip&AWSAccessKeyId=AKIAXRKZUZXRXGELLRMR&Expires=1701992350&Signature=K4aVh0BpW1iKdMyZ9EVj87Ei7FU%3D failed: CURLerror (curl_easy_perform() failed) - code=35 msg='SSL connect error' osCode=10054 osMsg='Unknown error'.\n    \n     (25) (SQLFetch)")
+2023-12-07 14:39:33,742 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 14:39:34,068 Guardian: INFO Workdays Mode
+2023-12-07 14:41:39,315 Guardian: ERROR create_df method from SnowFlakeToDF: ('HY000', "[HY000] [Snowflake][Snowflake] (25) \n      Result download worker error: Worker error: [Snowflake][Snowflake] (4) \n      REST request for URL https://sfc-va3-ds1-7-customer-stage.s3.amazonaws.com/ia210000-s/results/01b0d55a-0604-dbc3-0019-e30715b0ac02_0/main/data_0_0_1?x-amz-server-side-encryption-customer-algorithm=AES256&response-content-encoding=gzip&AWSAccessKeyId=AKIAXRKZUZXRXGELLRMR&Expires=1701992477&Signature=pJyNXGQatfL55itCqY2SXcrQnrc%3D failed: CURLerror (curl_easy_perform() failed) - code=35 msg='SSL connect error' osCode=10054 osMsg='Unknown error'.\n    \n     (25) (SQLFetch)")
+2023-12-07 14:42:16,386 Guardian: ERROR create_df method from SnowFlakeToDF: Execution failed on sql 'FROM BR_JUSTO_PROD.SANDBOX.PLACED_SALES_BY_CLUSTERT': ('42000', "[42000] SQL compilation error:\nsyntax error line 1 at position 0 unexpected 'FROM'. (1003) (SQLExecDirectW)")
+2023-12-07 14:42:16,768 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 14:42:17,131 Guardian: INFO Workdays Mode
+2023-12-07 14:43:27,702 Guardian: ERROR create_df method from SnowFlakeToDF: ('HY000', "[HY000] [Snowflake][Snowflake] (25) \n      Result download worker error: Worker error: [Snowflake][Snowflake] (4) \n      REST request for URL https://sfc-va3-ds1-7-customer-stage.s3.amazonaws.com/ia210000-s/results/01b0d566-0604-dbc1-0019-e30715b0bc12_0/main/data_0_0_1?x-amz-server-side-encryption-customer-algorithm=AES256&response-content-encoding=gzip&AWSAccessKeyId=AKIAXRKZUZXRXGELLRMR&Expires=1701992586&Signature=Tlwp3Br8fYi47ic3pFDBtMj1WnQ%3D failed: CURLerror (curl_easy_perform() failed) - code=35 msg='SSL connect error' osCode=10054 osMsg='Unknown error'.\n    \n     (25) (SQLFetch)")
+2023-12-07 14:43:28,578 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 14:43:36,084 Guardian: INFO load_to_gsheets from GSheetDataLoader: Base LG data was successfully loaded to Google Sheet.
+2023-12-07 14:43:36,099 Guardian: INFO Workdays Mode
+2023-12-07 14:44:56,853 Guardian: INFO load_to_gsheets from GSheetDataLoader: Base LG data was successfully loaded to Google Sheet.
+2023-12-07 14:44:56,883 Guardian: INFO Workdays Mode
+2023-12-07 14:46:16,652 Guardian: ERROR create_df method from SnowFlakeToDF: ('HY000', "[HY000] [Snowflake][Snowflake] (25) \n      Result download worker error: Worker error: [Snowflake][Snowflake] (4) \n      REST request for URL https://sfc-va3-ds1-7-customer-stage.s3.amazonaws.com/ia210000-s/results/01b0d55a-0604-dbc3-0019-e30715b0ac02_0/main/data_0_0_1?x-amz-server-side-encryption-customer-algorithm=AES256&response-content-encoding=gzip&AWSAccessKeyId=AKIAXRKZUZXRXGELLRMR&Expires=1701992754&Signature=iD7NeeqmyaaKM21B0xZ25o4NVNg%3D failed: CURLerror (curl_easy_perform() failed) - code=35 msg='SSL connect error' osCode=10054 osMsg='Unknown error'.\n    \n     (25) (SQLFetch)")
+2023-12-07 14:46:18,295 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 14:46:39,907 Guardian: ERROR create_df method from SnowFlakeToDF: ('HY000', "[HY000] [Snowflake][Snowflake] (25) \n      Result download worker error: Worker error: [Snowflake][Snowflake] (4) \n      REST request for URL https://sfc-va3-ds1-7-customer-stage.s3.amazonaws.com/ia210000-s/results/01b0d55a-0604-dbc3-0019-e30715b0ac02_0/main/data_0_0_0?x-amz-server-side-encryption-customer-algorithm=AES256&response-content-encoding=gzip&AWSAccessKeyId=AKIAXRKZUZXRXGELLRMR&Expires=1701992777&Signature=JiNy8ZEni6E9dNe7eeVdf7kZLZw%3D failed: CURLerror (curl_easy_perform() failed) - code=35 msg='SSL connect error' osCode=10054 osMsg='Unknown error'.\n    \n     (25) (SQLFetch)")
+2023-12-07 14:46:40,646 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 14:47:06,464 Guardian: INFO Workdays Mode
+2023-12-07 14:52:13,686 Guardian: ERROR create_df method from SnowFlakeToDF: ('HY000', "[HY000] [Snowflake][Snowflake] (25) \n      Result download worker error: Worker error: [Snowflake][Snowflake] (4) \n      REST request for URL https://sfc-va3-ds1-7-customer-stage.s3.amazonaws.com/ia210000-s/results/01b0d55a-0604-dbc3-0019-e30715b0ac02_0/main/data_0_0_0?x-amz-server-side-encryption-customer-algorithm=AES256&response-content-encoding=gzip&AWSAccessKeyId=AKIAXRKZUZXRXGELLRMR&Expires=1701993111&Signature=J7eKrD63Y%2BuhikfEX4Oipn6iukI%3D failed: CURLerror (curl_easy_perform() failed) - code=35 msg='SSL connect error' osCode=10054 osMsg='Unknown error'.\n    \n     (25) (SQLFetch)")
+2023-12-07 14:52:15,351 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 14:53:21,041 Guardian: ERROR create_df method from SnowFlakeToDF: ('HY000', "[HY000] [Snowflake][Snowflake] (25) \n      Result download worker error: Worker error: [Snowflake][Snowflake] (4) \n      REST request for URL https://sfc-va3-ds1-7-customer-stage.s3.amazonaws.com/ia210000-s/results/01b0d566-0604-dbc1-0019-e30715b0bc12_0/main/data_0_0_1?x-amz-server-side-encryption-customer-algorithm=AES256&response-content-encoding=gzip&AWSAccessKeyId=AKIAXRKZUZXRXGELLRMR&Expires=1701993179&Signature=cdfu7u0YJmNEcn6%2BLaYpQflzKpA%3D failed: CURLerror (curl_easy_perform() failed) - code=35 msg='SSL connect error' osCode=10054 osMsg='Unknown error'.\n    \n     (25) (SQLFetch)")
+2023-12-07 14:53:22,207 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 14:53:29,429 Guardian: INFO load_to_gsheets from GSheetDataLoader: Base LG data was successfully loaded to Google Sheet.
+2023-12-07 14:53:29,445 Guardian: INFO Workdays Mode
+2023-12-07 14:54:16,174 Guardian: ERROR create_df method from SnowFlakeToDF: ('HY000', "[HY000] [Snowflake][Snowflake] (25) \n      Result download worker error: Worker error: [Snowflake][Snowflake] (4) \n      REST request for URL https://sfc-va3-ds1-7-customer-stage.s3.amazonaws.com/ia210000-s/results/01b0d566-0604-dbc1-0019-e30715b0bc12_0/main/data_0_0_0?x-amz-server-side-encryption-customer-algorithm=AES256&response-content-encoding=gzip&AWSAccessKeyId=AKIAXRKZUZXRXGELLRMR&Expires=1701993235&Signature=44YG2DPS1MJRWx9mKy9YkeCi6x8%3D failed: CURLerror (curl_easy_perform() failed) - code=35 msg='SSL connect error' osCode=10054 osMsg='Unknown error'.\n    \n     (25) (SQLFetch)")
+2023-12-07 14:54:16,966 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 14:54:21,873 Guardian: INFO load_to_gsheets from GSheetDataLoader: Base LG data was successfully loaded to Google Sheet.
+2023-12-07 14:54:21,888 Guardian: INFO Workdays Mode
+2023-12-07 14:56:11,895 Guardian: INFO load_to_gsheets from GSheetDataLoader: Base LG data was successfully loaded to Google Sheet.
+2023-12-07 14:56:11,929 Guardian: INFO Workdays Mode
+2023-12-07 14:57:44,634 Guardian: ERROR create_df method from SnowFlakeToDF: ('HY000', "[HY000] [Snowflake][Snowflake] (25) \n      Result download worker error: Worker error: [Snowflake][Snowflake] (4) \n      REST request for URL https://sfc-va3-ds1-7-customer-stage.s3.amazonaws.com/ia210000-s/results/01b0d55a-0604-dbc3-0019-e30715b0ac02_0/main/data_0_0_1?x-amz-server-side-encryption-customer-algorithm=AES256&response-content-encoding=gzip&AWSAccessKeyId=AKIAXRKZUZXRXGELLRMR&Expires=1701993441&Signature=F9l%2FM8OxBSUlzib%2FrUYV041zkZQ%3D failed: CURLerror (curl_easy_perform() failed) - code=35 msg='SSL connect error' osCode=10054 osMsg='Unknown error'.\n    \n     (25) (SQLFetch)")
+2023-12-07 14:57:45,478 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 14:58:07,301 Guardian: ERROR create_df method from SnowFlakeToDF: ('HY000', "[HY000] [Snowflake][Snowflake] (25) \n      Result download worker error: Worker error: [Snowflake][Snowflake] (4) \n      REST request for URL https://sfc-va3-ds1-7-customer-stage.s3.amazonaws.com/ia210000-s/results/01b0d55a-0604-dbc3-0019-e30715b0ac02_0/main/data_0_0_1?x-amz-server-side-encryption-customer-algorithm=AES256&response-content-encoding=gzip&AWSAccessKeyId=AKIAXRKZUZXRXGELLRMR&Expires=1701993465&Signature=rNy4ty3lR8SlbqRAeYHtpz2pPaY%3D failed: CURLerror (curl_easy_perform() failed) - code=35 msg='SSL connect error' osCode=10054 osMsg='Unknown error'.\n    \n     (25) (SQLFetch)")
+2023-12-07 14:58:08,041 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 14:58:29,537 Guardian: ERROR create_df method from SnowFlakeToDF: ('HY000', "[HY000] [Snowflake][Snowflake] (25) \n      Result download worker error: Worker error: [Snowflake][Snowflake] (4) \n      REST request for URL https://sfc-va3-ds1-7-customer-stage.s3.amazonaws.com/ia210000-s/results/01b0d55a-0604-dbc3-0019-e30715b0ac02_0/main/data_0_0_0?x-amz-server-side-encryption-customer-algorithm=AES256&response-content-encoding=gzip&AWSAccessKeyId=AKIAXRKZUZXRXGELLRMR&Expires=1701993487&Signature=wrZp3eXp8dt%2BgAKp9qBg4X3Z9Wg%3D failed: CURLerror (curl_easy_perform() failed) - code=35 msg='SSL connect error' osCode=10054 osMsg='Unknown error'.\n    \n     (25) (SQLFetch)")
+2023-12-07 14:58:30,341 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 14:58:30,682 Guardian: INFO Workdays Mode
+2023-12-07 14:59:22,119 Guardian: INFO load_to_gsheets from GSheetDataLoader: Base LG data was successfully loaded to Google Sheet.
+2023-12-07 14:59:22,152 Guardian: INFO Workdays Mode
+2023-12-07 15:06:40,737 Guardian: INFO load_to_gsheets from GSheetDataLoader: Base LG data was successfully loaded to Google Sheet.
+2023-12-07 15:06:41,817 Guardian: INFO Workdays Mode
+2023-12-07 15:08:52,514 Guardian: INFO Workdays Mode
+2023-12-07 15:11:45,515 Guardian: ERROR create_df method from SnowFlakeToDF: ('HY000', "[HY000] [Snowflake][Snowflake] (25) \n      Result download worker error: Worker error: [Snowflake][Snowflake] (4) \n      REST request for URL https://sfc-va3-ds1-7-customer-stage.s3.amazonaws.com/ia210000-s/results/01b0d583-0604-dbc3-0019-e30715b18d26_0/main/data_0_1_0?x-amz-server-side-encryption-customer-algorithm=AES256&response-content-encoding=gzip&AWSAccessKeyId=AKIAXRKZUZXRXGELLRMR&Expires=1701994282&Signature=s%2BT1kPJrvKoGVsKaX5GPG6TZag0%3D failed: CURLerror (curl_easy_perform() failed) - code=35 msg='SSL connect error' osCode=10054 osMsg='Unknown error'.\n    \n     (25) (SQLFetch)")
+2023-12-07 15:11:47,890 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 15:15:17,462 Guardian: INFO Workdays Mode
+2023-12-07 15:18:56,775 Guardian: ERROR create_df method from SnowFlakeToDF: ('HY000', "[HY000] [Snowflake][Snowflake] (25) \n      Result download worker error: Worker error: [Snowflake][Snowflake] (4) \n      REST request for URL https://sfc-va3-ds1-7-customer-stage.s3.amazonaws.com/ia210000-s/results/01b0d583-0604-dbc3-0019-e30715b18d26_0/main/data_0_1_1?x-amz-server-side-encryption-customer-algorithm=AES256&response-content-encoding=gzip&AWSAccessKeyId=AKIAXRKZUZXRXGELLRMR&Expires=1701994713&Signature=ZlvPj8hNPJBCzNOIaa9d05S6L%2Fg%3D failed: CURLerror (curl_easy_perform() failed) - code=35 msg='SSL connect error' osCode=10054 osMsg='Unknown error'.\n    \n     (25) (SQLFetch)")
+2023-12-07 15:18:57,593 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 15:18:57,928 Guardian: INFO Workdays Mode
+2023-12-07 15:28:48,405 Guardian: ERROR create_df method from SnowFlakeToDF: ('HY000', "[HY000] [Snowflake][Snowflake] (25) \n      Result download worker error: Worker error: [Snowflake][Snowflake] (4) \n      REST request for URL https://sfc-va3-ds1-7-customer-stage.s3.amazonaws.com/ia210000-s/results/01b0d583-0604-dbc3-0019-e30715b18d26_0/main/data_0_0_0?x-amz-server-side-encryption-customer-algorithm=AES256&response-content-encoding=gzip&AWSAccessKeyId=AKIAXRKZUZXRXGELLRMR&Expires=1701995305&Signature=3%2Bv04EsDSESYuzLSxD%2FvZmKZI8c%3D failed: CURLerror (curl_easy_perform() failed) - code=35 msg='SSL connect error' osCode=10054 osMsg='Unknown error'.\n    \n     (25) (SQLFetch)")
+2023-12-07 15:28:50,134 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 15:28:50,554 Guardian: INFO Workdays Mode
+2023-12-07 15:33:57,584 Guardian: INFO load_to_gsheets from GSheetDataLoader: Base LG data was successfully loaded to Google Sheet.
+2023-12-07 15:33:57,626 Guardian: INFO Workdays Mode
+2023-12-07 15:35:05,544 Guardian: INFO load_to_gsheets from GSheetDataLoader: Cupom All - MX data was successfully loaded to Google Sheet.
+2023-12-07 15:48:42,645 Guardian: INFO Workdays Mode
+2023-12-07 15:51:00,269 Guardian: ERROR create_df method from SnowFlakeToDF: Execution failed on sql 'S': ('42000', "[42000] SQL compilation error:\nsyntax error line 1 at position 0 unexpected 'S'. (1003) (SQLExecDirectW)")
+2023-12-07 15:51:00,739 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 15:51:02,141 Guardian: ERROR create_df method from SnowFlakeToDF: Execution failed on sql 'C': ('42000', "[42000] SQL compilation error:\nsyntax error line 1 at position 0 unexpected 'C'. (1003) (SQLExecDirectW)")
+2023-12-07 15:51:02,474 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 15:51:02,811 Guardian: INFO Workdays Mode
+2023-12-07 15:52:16,951 Guardian: ERROR create_df method from SnowFlakeToDF: Execution failed on sql 'S': ('42000', "[42000] SQL compilation error:\nsyntax error line 1 at position 0 unexpected 'S'. (1003) (SQLExecDirectW)")
+2023-12-07 15:52:17,322 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 15:52:19,034 Guardian: ERROR create_df method from SnowFlakeToDF: Execution failed on sql 'C': ('42000', "[42000] SQL compilation error:\nsyntax error line 1 at position 0 unexpected 'C'. (1003) (SQLExecDirectW)")
+2023-12-07 15:52:19,331 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 15:52:19,651 Guardian: INFO Workdays Mode
+2023-12-07 15:52:59,310 Guardian: INFO Workdays Mode
+2023-12-07 15:57:21,117 Guardian: ERROR Exception from main module: too many values to unpack (expected 2)
+2023-12-07 15:57:21,494 Guardian: CRITICAL A automação do Dante parou.
+2023-12-07 15:58:44,682 Guardian: INFO Workdays Mode
+2023-12-07 16:00:28,456 Guardian: ERROR Exception from main module: list indices must be integers or slices, not tuple
+2023-12-07 16:00:28,834 Guardian: CRITICAL A automação do Dante parou.
+2023-12-07 16:01:16,310 Guardian: INFO Workdays Mode
+2023-12-07 16:23:01,929 Guardian: INFO Workdays Mode
+2023-12-07 16:30:36,717 Guardian: INFO Workdays Mode
+2023-12-07 16:32:47,906 Guardian: INFO Workdays Mode
+2023-12-07 18:36:11,943 Guardian: ERROR Exception from main module: No module named 'pl_config'
+2023-12-07 18:36:13,052 Guardian: CRITICAL A automação do Dante parou.
+2023-12-07 18:36:34,855 Guardian: ERROR Exception from main module: 'SecInfo' object has no attribute 'u_stock'
+2023-12-07 18:36:35,196 Guardian: CRITICAL A automação do Dante parou.
+2023-12-07 18:37:59,779 Guardian: INFO Workdays Mode
+2023-12-07 18:43:56,533 Guardian: ERROR Exception from main module: 'SecInfo' object has no attribute 'A_HOST'
+2023-12-07 18:43:56,887 Guardian: CRITICAL A automação do Dante parou.
+2023-12-07 18:45:26,025 Guardian: INFO Workdays Mode
+2023-12-07 18:48:13,880 Guardian: INFO Workdays Mode
+2023-12-07 18:52:50,532 Guardian: INFO Workdays Mode
+2023-12-07 18:58:54,138 Guardian: ERROR create_df method from SnowFlakeToDF: Execution failed on sql 'SELECT * FROM BR_JUSTO_PROD.SANDBOX.AMICCI_SELLOUT;': ('42S02', "[42S02] SQL compilation error:\nObject 'BR_JUSTO_PROD.SANDBOX.AMICCI_SELLOUT' does not exist or not authorized. (2003) (SQLExecDirectW)")
+2023-12-07 18:58:54,553 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 19:00:14,111 Guardian: ERROR create_df method from SnowFlakeToDF: Execution failed on sql 'SELECT * FROM BR_JUSTO_PROD.SANDBOX.AMICCI_SELLOUT;': ('42S02', "[42S02] SQL compilation error:\nObject 'BR_JUSTO_PROD.SANDBOX.AMICCI_SELLOUT' does not exist or not authorized. (2003) (SQLExecDirectW)")
+2023-12-07 19:00:14,471 Guardian: ERROR df_to_csv method from SnowFlakeToDF: Dataframe is none
+2023-12-07 19:01:53,851 Guardian: INFO Workdays Mode
+2023-12-07 19:05:47,792 Guardian: INFO Workdays Mode
