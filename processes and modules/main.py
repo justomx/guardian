@@ -12,9 +12,8 @@ try:
         Este módulo serve estritamente para fins de:
             - Gerenciar tarefas
     """
-
     class ReportGroup:
-
+        
         def __init__(self):
             self.last_mile =[rs.MReport01,
                 rs.MReport02,
@@ -27,28 +26,16 @@ try:
                 rs.MReport11,
                 rs.GReport01
                 ]
-            self.growth_redundant =[#rs.MReport14,
-                rs.MReport16,
+            self.growth_redundant =[rs.MReport16,
                 ]
-            self.growth_performance =[#rs.AReport01,
-                #rs.AReport02,
-                rs.MReport38,
-                rs.MReport39,
-                rs.MReport40,
-                rs.MReport41,
-                rs.MReport42,
+            self.growth_performance =[rs.MReport41
                 ]
             self.growth_ecommerce =[rs.MReport12,
-                #rs.MReport13,
-                #rs.MReport14,
                 rs.MReport15,
                 ]
-            self.funil =[#rs.MReport18,
-              #  rs.MReport19,
-                rs.MReport20,
+            self.funil =[rs.MReport20,
                 rs.MReport23,
                 rs.MReport24,
-              #  rs.MReport26, desligado
                 ]
             self.bases_cx =[rs.GReport08,
                 rs.PReport01,
@@ -70,51 +57,26 @@ try:
                 rs.GReport03,
                 rs.GReport10,
             ]
-            self.motoristas =[#rs.MReport31,
-               # rs.MReport32,
-                rs.GReport04,
-                rs.GReport05,
-                rs.GReport06,
-                rs.GReport07,
-                rs.LReport01,
-            ]
-            self.funil_de_ops =[rs.ZReport01,
-                rs.ZReport02,
-                rs.ZReport03,
-                rs.ZReport04,
-            ]
-            self.growth_real_time =[rs.MReport35,
-             #Chrome   rs.MReport36,
-            ]
             self.relatorio_merma =[rs.GReport11,
                 rs.GReport12,
                 rs.GReport13,
                 rs.GReport14,
             ]
-            self.mapa_abastecimento =[rs.MReport45,
-                rs.MReport46,
-                rs.MReport48,
-                rs.MReport62
+            self.mapa_abastecimento =[rs.MReport62
             ]
 
     class Manager:
-
         def __init__(self):
             self.current_list = []
             self.error_list = []
-
         def set_reports(self,metabase_list):
             self.current_list = metabase_list
-
         def errors_reset(self):
             self.error_list=[]
-
         def switch(self,report_set):
             self.set_reports(report_set)
             self.run_job()
-
             self.current_list = []
-
         def run_and_verify(self, report):
             cl = FolderUpperCleaner()
             cl.clean_downloads()
@@ -125,13 +87,11 @@ try:
             else:
                 pass
             return inst_verify(report.default_destination_path)
-
         def message_sender(self):
             self.message="Bom dia <!channel> tivemos falhas de extração pra esses reports"
             if self.error_list:
                 all = "".join(self.error_list)
                 send_message(self.message + all, 'bot_channel')
-
         def error_handler(self, report, channel):
             if report.instant_notification == True:
                 send_message('Olá <!channel>, houve falha na extração do relatório '+report.name+' está sendo feita um nova rodagem do processo.',channel)
@@ -148,7 +108,6 @@ try:
             else:
                 self.error_list.append('\n    - '+report.name)
                 return
-
         def run_job(self):
             for c in self.current_list:
                 report = c()
@@ -176,12 +135,10 @@ try:
 
     managermb= Manager()
     switch = managermb.switch
-
     reportst = ReportGroup() 
-
-    e='etl_routines'
-    runpy.run_path(path_name=e+'/etlroutine09.py')
-
+    
+    switch([rs.MReport54])
+    
     def workdays():
         e='etl_routines'
         v='validations'
@@ -189,14 +146,12 @@ try:
         
         process_registrant.register_info('Workdays Mode')
         schedule.every().day.at("00:00").do(managermb.errors_reset)
-        schedule.every().day.at("00:05").do(switch,reportst.funil_de_ops)
         schedule.every().day.at("00:30").do(switch,[rs.MReport43])  
         schedule.every().day.at("01:00").do(switch,reportst.onmaps)
         schedule.every().day.at("01:35").do(switch,reportst.funil)
         schedule.every().day.at("02:35").do(switch,reportst.growth_redundant)
         schedule.every().day.at("03:00").do(switch,reportst.growth_ecommerce)
-        schedule.every().day.at("03:40").do(switch,reportst.bases_cx)  
-        schedule.every().day.at("04:15").do(switch,reportst.motoristas)
+        schedule.every().day.at("03:40").do(switch,reportst.bases_cx)   
         schedule.every().day.at("05:25").do(switch,reportst.experiencia_do_cliente) 
         schedule.every().day.at("06:00").do(switch,reportst.growth_performance)
         schedule.every().day.at("06:35").do(etl_routines)     
@@ -244,25 +199,6 @@ try:
         schedule.every().day.at("20:39").do(runpy.run_path,path_name=v+'/validation02.py') #cupom category validation mx
         schedule.every().day.at("21:00").do(switch,reportst.last_mile)
         schedule.every().day.at("00:25").do(switch,[rs.GReport09]) #merma são domingos - entender o porque de termos essa automatização
-        schedule.every().day.at("07:45").do(switch,[rs.MReport33]) #gestao à vista 
-        schedule.every().day.at("08:45").do(switch,[rs.MReport33])
-        schedule.every().day.at("09:45").do(switch,[rs.MReport33])
-        schedule.every().day.at("11:45").do(switch,[rs.MReport33])
-        schedule.every().day.at("13:45").do(switch,[rs.MReport33])
-        schedule.every().day.at("15:45").do(switch,[rs.MReport33])
-        schedule.every().day.at("17:45").do(switch,[rs.MReport33])
-        schedule.every().day.at("19:45").do(switch,[rs.MReport33])
-        schedule.every().day.at("21:45").do(switch,[rs.MReport33])
-        schedule.every().day.at("22:45").do(switch,[rs.MReport33])
-        schedule.every().day.at("23:45").do(switch,[rs.MReport33])
-        schedule.every().day.at("10:45").do(switch,[rs.MReport47]) #gestao à vista MX
-        schedule.every().day.at("12:45").do(switch,[rs.MReport47])
-        schedule.every().day.at("14:45").do(switch,[rs.MReport47])
-        schedule.every().day.at("16:45").do(switch,[rs.MReport47])
-        schedule.every().day.at("18:45").do(switch,[rs.MReport47])
-        schedule.every().day.at("20:45").do(switch,[rs.MReport47])
-        schedule.every().day.at("22:45").do(switch,[rs.MReport47])
-        schedule.every().day.at("00:40").do(switch,[rs.MReport47])
         schedule.every().day.at("10:47").do(runpy.run_path,path_name=e+'/etlroutine11.py') #gestao à vista MX to GSheets
         schedule.every().day.at("12:47").do(runpy.run_path,path_name=e+'/etlroutine11.py')
         schedule.every().day.at("14:47").do(runpy.run_path,path_name=e+'/etlroutine11.py')
@@ -280,15 +216,6 @@ try:
         schedule.every().day.at("15:35").do(switch,[rs.MReport08])
         schedule.every().day.at("17:35").do(switch,[rs.MReport08])
         schedule.every().day.at("19:35").do(switch,[rs.MReport08])
-        schedule.every().day.at("08:13").do(switch,reportst.growth_real_time)
-        schedule.every().day.at("09:13").do(switch,reportst.growth_real_time)
-        schedule.every().day.at("11:13").do(switch,reportst.growth_real_time)
-        schedule.every().day.at("13:13").do(switch,reportst.growth_real_time)
-        schedule.every().day.at("15:13").do(switch,reportst.growth_real_time)
-        schedule.every().day.at("17:13").do(switch,reportst.growth_real_time)
-        schedule.every().day.at("19:13").do(switch,reportst.growth_real_time)
-        schedule.every().day.at("21:13").do(switch,reportst.growth_real_time)
-        schedule.every().day.at("22:13").do(switch,reportst.growth_real_time)
                 
         while True:
             schedule.run_pending()

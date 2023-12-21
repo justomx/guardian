@@ -240,45 +240,45 @@ class MReport12():
         return result
     limit_time=180
 
-class MReport13():
+# class MReport13():
 
-    time_formats = Time_formats()
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification=False
-    channel='bot_channel'
-    forced_try=False
-    name='Cluster Placed'
-    original_file_name='cluster_placed'
-    @property
-    def default_destination_path(self):
-        return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios de Growth\0 - ECOMMERCE\order_history_new\cluster_historico\cluster_placed_growth_'+self.alternative_date_variables.year_month+'.csv')]
-    @property
-    def link(self):
-        result = 'https://infinite.justo.mx/question/5416-cluster-placed-growth?from_date='+self.metabase_date_format.current_month_first_day+'&to_date='+self.metabase_date_format.today
-        return result
-    limit_time=260
+#     time_formats = Time_formats()
+#     metabase_date_format = Metabase_date_format()
+#     machine_info = MachineInfo()
+#     alternative_date_variables = Alternative_date_variables()
+#     instant_notification=False
+#     channel='bot_channel'
+#     forced_try=False
+#     name='Cluster Placed'
+#     original_file_name='cluster_placed'
+#     @property
+#     def default_destination_path(self):
+#         return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios de Growth\0 - ECOMMERCE\order_history_new\cluster_historico\cluster_placed_growth_'+self.alternative_date_variables.year_month+'.csv')]
+#     @property
+#     def link(self):
+#         result = 'https://infinite.justo.mx/question/5416-cluster-placed-growth?from_date='+self.metabase_date_format.current_month_first_day+'&to_date='+self.metabase_date_format.today
+#         return result
+#     limit_time=260
 
-class MReport14():
+# class MReport14():
 
-    time_formats = Time_formats()
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification=False
-    channel='bot_channel'
-    forced_try=True
-    name='Cluster Placed M-1'
-    original_file_name='cluster_placed'
-    @property
-    def default_destination_path(self):
-        return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios de Growth\0 - ECOMMERCE\order_history_new\cluster_historico\cluster_placed_growth_'+self.alternative_date_variables.past_month_year_month+'.csv')]
-    @property
-    def link(self):
-        result = 'https://infinite.justo.mx/question/5416-cluster-placed-growth?from_date='+self.metabase_date_format.past_month_first_day+'&to_date='+self.metabase_date_format.past_month_last_day
-        return result
-    limit_time=210
+#     time_formats = Time_formats()
+#     metabase_date_format = Metabase_date_format()
+#     machine_info = MachineInfo()
+#     alternative_date_variables = Alternative_date_variables()
+#     instant_notification=False
+#     channel='bot_channel'
+#     forced_try=True
+#     name='Cluster Placed M-1'
+#     original_file_name='cluster_placed'
+#     @property
+#     def default_destination_path(self):
+#         return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios de Growth\0 - ECOMMERCE\order_history_new\cluster_historico\cluster_placed_growth_'+self.alternative_date_variables.past_month_year_month+'.csv')]
+#     @property
+#     def link(self):
+#         result = 'https://infinite.justo.mx/question/5416-cluster-placed-growth?from_date='+self.metabase_date_format.past_month_first_day+'&to_date='+self.metabase_date_format.past_month_last_day
+#         return result
+#     limit_time=210
 
 class MReport15():
 
@@ -322,45 +322,45 @@ class MReport16():
         return result
     limit_time=180
     
-class MReport18():
+# class MReport18():
 
-    time_formats = Time_formats()
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification=False
-    channel='bot_channel'
-    forced_try=True
-    name='Sales By SKU'
-    original_file_name='sales_by_sku'
-    @property
-    def default_destination_path(self):
-        return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\6 - FUNIL\Bases\sales_by_sku_'+self.alternative_date_variables.month_year+'.csv')]
-    @property
-    def link(self):
-        result = 'https://infinite.justo.mx/question/4292-sales-by-sku?from_date='+self.metabase_date_format.current_month_first_day+'&to_date='+self.metabase_date_format.yesterday
-        return result
-    limit_time=120
+#     time_formats = Time_formats()
+#     metabase_date_format = Metabase_date_format()
+#     machine_info = MachineInfo()
+#     alternative_date_variables = Alternative_date_variables()
+#     instant_notification=False
+#     channel='bot_channel'
+#     forced_try=True
+#     name='Sales By SKU'
+#     original_file_name='sales_by_sku'
+#     @property
+#     def default_destination_path(self):
+#         return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\6 - FUNIL\Bases\sales_by_sku_'+self.alternative_date_variables.month_year+'.csv')]
+#     @property
+#     def link(self):
+#         result = 'https://infinite.justo.mx/question/4292-sales-by-sku?from_date='+self.metabase_date_format.current_month_first_day+'&to_date='+self.metabase_date_format.yesterday
+#         return result
+#     limit_time=120
 
-class MReport19():
+# class MReport19():
 
-    time_formats = Time_formats()
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification=False
-    channel='bot_channel'
-    forced_try=False
-    name='Conversão por Código - Add to Cart'
-    original_file_name='conversao_por_codigo'
-    @property
-    def default_destination_path(self):
-        return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\6 - FUNIL\Bases\add to cart by product.csv')]
-    @property
-    def link(self):
-        result = 'https://infinite.justo.mx/question/3929-conversao-por-codigo-add-to-cart-vs-visitas?desde='+self.metabase_date_format.past_month_first_day+'&ate='+self.metabase_date_format.yesterday
-        return result
-    limit_time=200
+#     time_formats = Time_formats()
+#     metabase_date_format = Metabase_date_format()
+#     machine_info = MachineInfo()
+#     alternative_date_variables = Alternative_date_variables()
+#     instant_notification=False
+#     channel='bot_channel'
+#     forced_try=False
+#     name='Conversão por Código - Add to Cart'
+#     original_file_name='conversao_por_codigo'
+#     @property
+#     def default_destination_path(self):
+#         return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\6 - FUNIL\Bases\add to cart by product.csv')]
+#     @property
+#     def link(self):
+#         result = 'https://infinite.justo.mx/question/3929-conversao-por-codigo-add-to-cart-vs-visitas?desde='+self.metabase_date_format.past_month_first_day+'&ate='+self.metabase_date_format.yesterday
+#         return result
+#     limit_time=200
     
 class MReport20():
 
@@ -543,46 +543,46 @@ class MReport32():
         return result
     limit_time=200
     
-class MReport33(): 
+# class MReport33(): 
 
-    time_formats = Time_formats()
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification=True
-    channel='bot_channel'
-    forced_try=True
-    name='Gestão À Vista'
-    original_file_name='gestao_a_vista'
-    @property
-    def default_destination_path(self):
-        return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\16 - GESTÃO À VISTA\bases\gestao_a_vista.csv')]
-    @property
-    def link(self):
-        result = 'https://infinite.justo.mx/question/5683'
-        return result
-    limit_time=40
+#     time_formats = Time_formats()
+#     metabase_date_format = Metabase_date_format()
+#     machine_info = MachineInfo()
+#     alternative_date_variables = Alternative_date_variables()
+#     instant_notification=True
+#     channel='bot_channel'
+#     forced_try=True
+#     name='Gestão À Vista'
+#     original_file_name='gestao_a_vista'
+#     @property
+#     def default_destination_path(self):
+#         return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\16 - GESTÃO À VISTA\bases\gestao_a_vista.csv')]
+#     @property
+#     def link(self):
+#         result = 'https://infinite.justo.mx/question/5683'
+#         return result
+#     limit_time=40
     
 
-class MReport56(): 
+# class MReport56(): 
 
-    time_formats = Time_formats()
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification=True
-    channel='data_performace_br'
-    forced_try=True
-    name='Gestão À Vista'
-    original_file_name='gestao_a_vista'
-    @property
-    def default_destination_path(self):
-        return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\16 - GESTÃO À VISTA\bases\gestao_a_vista.csv')]
-    @property
-    def link(self):
-        result = 'https://infinite.justo.mx/question/5683'
-        return result
-    limit_time=40
+#     time_formats = Time_formats()
+#     metabase_date_format = Metabase_date_format()
+#     machine_info = MachineInfo()
+#     alternative_date_variables = Alternative_date_variables()
+#     instant_notification=True
+#     channel='data_performace_br'
+#     forced_try=True
+#     name='Gestão À Vista'
+#     original_file_name='gestao_a_vista'
+#     @property
+#     def default_destination_path(self):
+#         return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\16 - GESTÃO À VISTA\bases\gestao_a_vista.csv')]
+#     @property
+#     def link(self):
+#         result = 'https://infinite.justo.mx/question/5683'
+#         return result
+#     limit_time=40
     
 class MReport34(): 
 
@@ -604,47 +604,47 @@ class MReport34():
         return result
     limit_time=180
 
-class MReport35():
+# class MReport35():
 
-    time_formats = Time_formats()
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification=False
-    channel='bot_channel'
-    forced_try=True
-    name='Order History - Real Time'
-    original_file_name='order_history'
-    @property
-    def default_destination_path(self):
-        path_list = [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios de Growth\0 - ECOMMERCE\order_history_new\order_history_real_time\order_history__updated__last_thirty_one_days.csv')]
-        return path_list
-    @property
-    def link(self):
-        result = 'https://infinite.justo.mx/question/5724-order-history-updated-new?from_date_p='+self.metabase_date_format.past_thirty_first_day+'&to_date_p='+self.metabase_date_format.today
-        return result
-    limit_time=210
+#     time_formats = Time_formats()
+#     metabase_date_format = Metabase_date_format()
+#     machine_info = MachineInfo()
+#     alternative_date_variables = Alternative_date_variables()
+#     instant_notification=False
+#     channel='bot_channel'
+#     forced_try=True
+#     name='Order History - Real Time'
+#     original_file_name='order_history'
+#     @property
+#     def default_destination_path(self):
+#         path_list = [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios de Growth\0 - ECOMMERCE\order_history_new\order_history_real_time\order_history__updated__last_thirty_one_days.csv')]
+#         return path_list
+#     @property
+#     def link(self):
+#         result = 'https://infinite.justo.mx/question/5724-order-history-updated-new?from_date_p='+self.metabase_date_format.past_thirty_first_day+'&to_date_p='+self.metabase_date_format.today
+#         return result
+#     limit_time=210
 
-class MReport36():
+# class MReport36():
 
-    time_formats = Time_formats()
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification=False
-    channel='bot_channel'
-    forced_try=True
-    name='Cluster Placed D-Atual'
-    original_file_name='cluster_placed'
-    @property
-    def default_destination_path(self):
-        path_list = [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios de Growth\0 - ECOMMERCE\order_history_new\cluster_historico\cluster_placed_growth_realtime.csv')]
-        return path_list
-    @property
-    def link(self):
-        result = 'https://infinite.justo.mx/question/5416-cluster-placed-growth?from_date='+self.metabase_date_format.today+'&to_date='+self.metabase_date_format.today
-        return result
-    limit_time=300
+#     time_formats = Time_formats()
+#     metabase_date_format = Metabase_date_format()
+#     machine_info = MachineInfo()
+#     alternative_date_variables = Alternative_date_variables()
+#     instant_notification=False
+#     channel='bot_channel'
+#     forced_try=True
+#     name='Cluster Placed D-Atual'
+#     original_file_name='cluster_placed'
+#     @property
+#     def default_destination_path(self):
+#         path_list = [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios de Growth\0 - ECOMMERCE\order_history_new\cluster_historico\cluster_placed_growth_realtime.csv')]
+#         return path_list
+#     @property
+#     def link(self):
+#         result = 'https://infinite.justo.mx/question/5416-cluster-placed-growth?from_date='+self.metabase_date_format.today+'&to_date='+self.metabase_date_format.today
+#         return result
+#     limit_time=300
 
 class MReport37():
 
@@ -667,68 +667,68 @@ class MReport37():
         return result
     limit_time=60
 
-class MReport38():
+# class MReport38():
 
-    time_formats = Time_formats()
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification=False
-    channel='bot_channel'
-    forced_try=True
-    name='Funnel Audiência - Web'
-    original_file_name='funnel_audiencia_'
-    @property
-    def default_destination_path(self):
-        path_list = [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios de Growth\1 - PERFORMANCE\funnel\Funnel Audiência - Web.csv')]
-        return path_list
-    @property
-    def link(self):
-        result = 'https://infinite.justo.mx/question/4097-funnel-audiencia-web-br?desde='+self.metabase_date_format.six_months_ago_first_day+'&hasta='+self.metabase_date_format.today
-        return result
-    limit_time=75
+#     time_formats = Time_formats()
+#     metabase_date_format = Metabase_date_format()
+#     machine_info = MachineInfo()
+#     alternative_date_variables = Alternative_date_variables()
+#     instant_notification=False
+#     channel='bot_channel'
+#     forced_try=True
+#     name='Funnel Audiência - Web'
+#     original_file_name='funnel_audiencia_'
+#     @property
+#     def default_destination_path(self):
+#         path_list = [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios de Growth\1 - PERFORMANCE\funnel\Funnel Audiência - Web.csv')]
+#         return path_list
+#     @property
+#     def link(self):
+#         result = 'https://infinite.justo.mx/question/4097-funnel-audiencia-web-br?desde='+self.metabase_date_format.six_months_ago_first_day+'&hasta='+self.metabase_date_format.today
+#         return result
+#     limit_time=75
 
-class MReport39():
+# class MReport39():
 
-    time_formats = Time_formats()
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification=False
-    channel='bot_channel'
-    forced_try=True
-    name='Funnel Audiência - IOS'
-    original_file_name='funnel_audiencia_'
-    @property
-    def default_destination_path(self):
-        path_list = [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios de Growth\1 - PERFORMANCE\funnel\Funnel Audiência - IOS.csv')]
-        return path_list
-    @property
-    def link(self):
-        result = 'https://infinite.justo.mx/question/4099-funnel-audiencia-ios-br?desde='+self.metabase_date_format.six_months_ago_first_day+'&hasta='+self.metabase_date_format.today
-        return result
-    limit_time=75
+#     time_formats = Time_formats()
+#     metabase_date_format = Metabase_date_format()
+#     machine_info = MachineInfo()
+#     alternative_date_variables = Alternative_date_variables()
+#     instant_notification=False
+#     channel='bot_channel'
+#     forced_try=True
+#     name='Funnel Audiência - IOS'
+#     original_file_name='funnel_audiencia_'
+#     @property
+#     def default_destination_path(self):
+#         path_list = [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios de Growth\1 - PERFORMANCE\funnel\Funnel Audiência - IOS.csv')]
+#         return path_list
+#     @property
+#     def link(self):
+#         result = 'https://infinite.justo.mx/question/4099-funnel-audiencia-ios-br?desde='+self.metabase_date_format.six_months_ago_first_day+'&hasta='+self.metabase_date_format.today
+#         return result
+#     limit_time=75
 
-class MReport40():
+# class MReport40():
 
-    time_formats = Time_formats()
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification=False
-    channel='bot_channel'
-    forced_try=True
-    name='Funnel Audiência - Android'
-    original_file_name='funnel_audiencia_'
-    @property
-    def default_destination_path(self):
-        path_list = [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios de Growth\1 - PERFORMANCE\funnel\Funnel Audiência - Android.csv')]
-        return path_list
-    @property
-    def link(self):
-        result = 'https://infinite.justo.mx/question/4101-funnel-audiencia-android-br?desde='+self.metabase_date_format.six_months_ago_first_day+'&hasta='+self.metabase_date_format.today
-        return result
-    limit_time=75
+#     time_formats = Time_formats()
+#     metabase_date_format = Metabase_date_format()
+#     machine_info = MachineInfo()
+#     alternative_date_variables = Alternative_date_variables()
+#     instant_notification=False
+#     channel='bot_channel'
+#     forced_try=True
+#     name='Funnel Audiência - Android'
+#     original_file_name='funnel_audiencia_'
+#     @property
+#     def default_destination_path(self):
+#         path_list = [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios de Growth\1 - PERFORMANCE\funnel\Funnel Audiência - Android.csv')]
+#         return path_list
+#     @property
+#     def link(self):
+#         result = 'https://infinite.justo.mx/question/4101-funnel-audiencia-android-br?desde='+self.metabase_date_format.six_months_ago_first_day+'&hasta='+self.metabase_date_format.today
+#         return result
+#     limit_time=75
 
 class MReport41():
 
@@ -751,26 +751,26 @@ class MReport41():
         return result
     limit_time=30
 
-class MReport42():
+# class MReport42():
 
-    time_formats = Time_formats()
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification=False
-    channel='bot_channel'
-    forced_try=True
-    name='Tabla Conversion Diária Br'
-    original_file_name='tabla_conversion_'
-    @property
-    def default_destination_path(self):
-        path_list = [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios de Growth\1 - PERFORMANCE\funnel\Tabla Conversión Diaria (General) - Br.csv')]
-        return path_list
-    @property
-    def link(self):
-        result = 'https://infinite.justo.mx/question/3313-tabla-conversion-diaria-general-br?desde='+self.metabase_date_format.current_year_first_day+'&hasta='+self.metabase_date_format.today
-        return result
-    limit_time=85
+#     time_formats = Time_formats()
+#     metabase_date_format = Metabase_date_format()
+#     machine_info = MachineInfo()
+#     alternative_date_variables = Alternative_date_variables()
+#     instant_notification=False
+#     channel='bot_channel'
+#     forced_try=True
+#     name='Tabla Conversion Diária Br'
+#     original_file_name='tabla_conversion_'
+#     @property
+#     def default_destination_path(self):
+#         path_list = [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios de Growth\1 - PERFORMANCE\funnel\Tabla Conversión Diaria (General) - Br.csv')]
+#         return path_list
+#     @property
+#     def link(self):
+#         result = 'https://infinite.justo.mx/question/3313-tabla-conversion-diaria-general-br?desde='+self.metabase_date_format.current_year_first_day+'&hasta='+self.metabase_date_format.today
+#         return result
+#     limit_time=85
 
 class MReport43():
 
@@ -814,87 +814,87 @@ class MReport44():
         return result
     limit_time=85
 
-class MReport45():
+# class MReport45():
 
-    time_formats = Time_formats()
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification=False
-    channel='bot_channel'
-    forced_try=True
-    name='All Skus SD'
-    original_file_name='all_skus'
-    @property
-    def default_destination_path(self):
-        path_list = [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\15 - MAPA DE ABASTECIMENTO 2.0\bases\All_Skus_SD.csv')]
-        return path_list
-    @property
-    def link(self):
-        result = 'https://infinite.justo.mx/question/2308-all-skus-brasil-com-peso-reservado'
-        return result
-    limit_time=200
+#     time_formats = Time_formats()
+#     metabase_date_format = Metabase_date_format()
+#     machine_info = MachineInfo()
+#     alternative_date_variables = Alternative_date_variables()
+#     instant_notification=False
+#     channel='bot_channel'
+#     forced_try=True
+#     name='All Skus SD'
+#     original_file_name='all_skus'
+#     @property
+#     def default_destination_path(self):
+#         path_list = [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\15 - MAPA DE ABASTECIMENTO 2.0\bases\All_Skus_SD.csv')]
+#         return path_list
+#     @property
+#     def link(self):
+#         result = 'https://infinite.justo.mx/question/2308-all-skus-brasil-com-peso-reservado'
+#         return result
+#     limit_time=200
     
-class MReport46():
+# class MReport46():
 
-    time_formats = Time_formats()
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification=False
-    channel='bot_channel'
-    forced_try=True
-    name='All Skus NM'
-    original_file_name='all_skus'
-    @property
-    def default_destination_path(self):
-        path_list = [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\15 - MAPA DE ABASTECIMENTO 2.0\bases\All_Skus_NM.csv')]
-        return path_list
-    @property
-    def link(self):
-        result = 'https://infinite.justo.mx/question/5531-all-skus-brasil-novo-mundo'
-        return result
-    limit_time=200
+#     time_formats = Time_formats()
+#     metabase_date_format = Metabase_date_format()
+#     machine_info = MachineInfo()
+#     alternative_date_variables = Alternative_date_variables()
+#     instant_notification=False
+#     channel='bot_channel'
+#     forced_try=True
+#     name='All Skus NM'
+#     original_file_name='all_skus'
+#     @property
+#     def default_destination_path(self):
+#         path_list = [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\15 - MAPA DE ABASTECIMENTO 2.0\bases\All_Skus_NM.csv')]
+#         return path_list
+#     @property
+#     def link(self):
+#         result = 'https://infinite.justo.mx/question/5531-all-skus-brasil-novo-mundo'
+#         return result
+#     limit_time=200
 
-class MReport47(): 
+# class MReport47(): 
 
-    time_formats = Time_formats()
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification=True
-    channel='bot_channel'
-    forced_try=True
-    name='Gestão À Vista MX'
-    original_file_name='gestao_a_vista'
-    @property
-    def default_destination_path(self):
-        return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\MX\Reports\Gestão Á Vista\gestao_a_vista.csv')]
-    @property
-    def link(self):
-        result = 'https://infinite.justo.mx/question/5647'
-        return result
-    limit_time=40
+#     time_formats = Time_formats()
+#     metabase_date_format = Metabase_date_format()
+#     machine_info = MachineInfo()
+#     alternative_date_variables = Alternative_date_variables()
+#     instant_notification=True
+#     channel='bot_channel'
+#     forced_try=True
+#     name='Gestão À Vista MX'
+#     original_file_name='gestao_a_vista'
+#     @property
+#     def default_destination_path(self):
+#         return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\MX\Reports\Gestão Á Vista\gestao_a_vista.csv')]
+#     @property
+#     def link(self):
+#         result = 'https://infinite.justo.mx/question/5647'
+#         return result
+#     limit_time=40
 
-class MReport48(): 
+# class MReport48(): 
 
-    time_formats = Time_formats()
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification=True
-    channel='bot_channel'
-    forced_try=True
-    name='Produtos com Desconto'
-    original_file_name='produtos_com_desconto'
-    @property
-    def default_destination_path(self):
-        return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\15 - MAPA DE ABASTECIMENTO 2.0\bases\Descontos.csv')]
-    @property
-    def link(self):
-        result = 'https://infinite.justo.mx/question/1935'
-        return result
-    limit_time=60
+#     time_formats = Time_formats()
+#     metabase_date_format = Metabase_date_format()
+#     machine_info = MachineInfo()
+#     alternative_date_variables = Alternative_date_variables()
+#     instant_notification=True
+#     channel='bot_channel'
+#     forced_try=True
+#     name='Produtos com Desconto'
+#     original_file_name='produtos_com_desconto'
+#     @property
+#     def default_destination_path(self):
+#         return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\15 - MAPA DE ABASTECIMENTO 2.0\bases\Descontos.csv')]
+#     @property
+#     def link(self):
+#         result = 'https://infinite.justo.mx/question/1935'
+#         return result
+#     limit_time=60
 
 class MReport49(): 
 
@@ -917,46 +917,46 @@ class MReport49():
         return result
     limit_time=260 # check ! 
 
-class MReport50(): 
+# class MReport50(): 
 
-    time_formats = Time_formats()
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification=True
-    channel='bot_channel'
-    forced_try=True
-    name='Vendas Por SKU Diário'
-    original_file_name='vendas_por_sku__torre_de_controle'
-    @property
-    def default_destination_path(self):
-        return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\2 - SUPPLY DASHBOARD\Bases Metabase\venda_por_sku_diario_'+self.alternative_date_variables.year_month+r'.csv')]
-    @property
-    def link(self):
-        result = 'https://infinite.justo.mx/question/3744-vendas-por-sku-torre-de-controle?from_date='+self.metabase_date_format.current_month_first_day+'&to_date='+self.metabase_date_format.current_month_last_day
-        return result
-    limit_time=320 # check ! 
+#     time_formats = Time_formats()
+#     metabase_date_format = Metabase_date_format()
+#     machine_info = MachineInfo()
+#     alternative_date_variables = Alternative_date_variables()
+#     instant_notification=True
+#     channel='bot_channel'
+#     forced_try=True
+#     name='Vendas Por SKU Diário'
+#     original_file_name='vendas_por_sku__torre_de_controle'
+#     @property
+#     def default_destination_path(self):
+#         return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\2 - SUPPLY DASHBOARD\Bases Metabase\venda_por_sku_diario_'+self.alternative_date_variables.year_month+r'.csv')]
+#     @property
+#     def link(self):
+#         result = 'https://infinite.justo.mx/question/3744-vendas-por-sku-torre-de-controle?from_date='+self.metabase_date_format.current_month_first_day+'&to_date='+self.metabase_date_format.current_month_last_day
+#         return result
+#     limit_time=320 # check ! 
 
-class MReport51():
+# class MReport51():
 
-    time_formats = Time_formats()
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification=False
-    channel='bot_channel'
-    forced_try=True
-    name='Vendas Diárias Nível Orderline'
-    original_file_name='vendas_diarias'
-    @property
-    def default_destination_path(self):
-        path_list = [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios de Pricing\0 - VENDAS DIÁRIAS NÍVEL ORDERLINE\Bases Originais\M-Atual.xlsx')]
-        return path_list
-    @property
-    def link(self):
-        result = 'https://infinite.justo.mx/question/3480-vendas-diarias-nivel-orderline?from_date='+self.metabase_date_format.current_month_first_day+'&to_date='+self.metabase_date_format.next_month_fifteenth_day
-        return result
-    limit_time=480
+#     time_formats = Time_formats()
+#     metabase_date_format = Metabase_date_format()
+#     machine_info = MachineInfo()
+#     alternative_date_variables = Alternative_date_variables()
+#     instant_notification=False
+#     channel='bot_channel'
+#     forced_try=True
+#     name='Vendas Diárias Nível Orderline'
+#     original_file_name='vendas_diarias'
+#     @property
+#     def default_destination_path(self):
+#         path_list = [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios de Pricing\0 - VENDAS DIÁRIAS NÍVEL ORDERLINE\Bases Originais\M-Atual.xlsx')]
+#         return path_list
+#     @property
+#     def link(self):
+#         result = 'https://infinite.justo.mx/question/3480-vendas-diarias-nivel-orderline?from_date='+self.metabase_date_format.current_month_first_day+'&to_date='+self.metabase_date_format.next_month_fifteenth_day
+#         return result
+#     limit_time=480
 
 class MReport52():
 
@@ -1215,81 +1215,81 @@ class MReport62():
 
 # Zendesk
 
-class ZReport01():
+# class ZReport01():
 
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification=False
-    channel='bot_channel'
-    forced_try=True
-    name='SAC Reagendamento'
-    original_file_name='SAC'
-    @property
-    def default_destination_path(self):
-        return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\12 - FUNIL DE OPS\Bases\sac_reagendamento\sac_reagendamento_'+self.alternative_date_variables.yest_str+'.csv')]
-    @property
-    def link(self):
-        result = 'https://justo7393.zendesk.com/explore#/pivot-table/connection/13828291/report/118420981'
-        return result
-    limit_time=35
+#     metabase_date_format = Metabase_date_format()
+#     machine_info = MachineInfo()
+#     alternative_date_variables = Alternative_date_variables()
+#     instant_notification=False
+#     channel='bot_channel'
+#     forced_try=True
+#     name='SAC Reagendamento'
+#     original_file_name='SAC'
+#     @property
+#     def default_destination_path(self):
+#         return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\12 - FUNIL DE OPS\Bases\sac_reagendamento\sac_reagendamento_'+self.alternative_date_variables.yest_str+'.csv')]
+#     @property
+#     def link(self):
+#         result = 'https://justo7393.zendesk.com/explore#/pivot-table/connection/13828291/report/118420981'
+#         return result
+#     limit_time=35
 
-class ZReport02():
+# class ZReport02():
 
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification=False
-    channel='bot_channel'
-    forced_try=True
-    name='SAC Cancelamento'
-    original_file_name='SAC'
-    @property
-    def default_destination_path(self):
-        return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\12 - FUNIL DE OPS\Bases\sac_cancelamento\sac_cancelamento_'+self.alternative_date_variables.yest_str+'.csv')]
-    @property
-    def link(self):
-        result = 'https://justo7393.zendesk.com/explore#/pivot-table/connection/13828291/report/116325031'
-        return result
-    limit_time=35
+#     metabase_date_format = Metabase_date_format()
+#     machine_info = MachineInfo()
+#     alternative_date_variables = Alternative_date_variables()
+#     instant_notification=False
+#     channel='bot_channel'
+#     forced_try=True
+#     name='SAC Cancelamento'
+#     original_file_name='SAC'
+#     @property
+#     def default_destination_path(self):
+#         return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\12 - FUNIL DE OPS\Bases\sac_cancelamento\sac_cancelamento_'+self.alternative_date_variables.yest_str+'.csv')]
+#     @property
+#     def link(self):
+#         result = 'https://justo7393.zendesk.com/explore#/pivot-table/connection/13828291/report/116325031'
+#         return result
+#     limit_time=35
 
-class ZReport03():
+# class ZReport03():
 
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification=False
-    channel='bot_channel'
-    forced_try=True
-    name='Motorista Reagendamento Cancelamento LOG'
-    original_file_name='Motorista'
-    @property
-    def default_destination_path(self):
-        return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\12 - FUNIL DE OPS\Bases\motorista_reagendamento_cancelamento_log\motorista_reagendamento_cancelamento_log_'+self.alternative_date_variables.yest_str+'.csv')]
-    @property
-    def link(self):
-        result = 'https://justo7393.zendesk.com/explore#/pivot-table/connection/13828291/report/135830651'
-        return result
-    limit_time=35
+#     metabase_date_format = Metabase_date_format()
+#     machine_info = MachineInfo()
+#     alternative_date_variables = Alternative_date_variables()
+#     instant_notification=False
+#     channel='bot_channel'
+#     forced_try=True
+#     name='Motorista Reagendamento Cancelamento LOG'
+#     original_file_name='Motorista'
+#     @property
+#     def default_destination_path(self):
+#         return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\12 - FUNIL DE OPS\Bases\motorista_reagendamento_cancelamento_log\motorista_reagendamento_cancelamento_log_'+self.alternative_date_variables.yest_str+'.csv')]
+#     @property
+#     def link(self):
+#         result = 'https://justo7393.zendesk.com/explore#/pivot-table/connection/13828291/report/135830651'
+#         return result
+#     limit_time=35
 
-class ZReport04():
+# class ZReport04():
 
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification =False
-    channel='bot_channel'
-    forced_try=True
-    name='Cliente Reagendamento Cancelamento LOG'
-    original_file_name='Cliente'
-    @property
-    def default_destination_path(self):
-        return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\12 - FUNIL DE OPS\Bases\cliente_reagendamento_cancelamento_log\cliente_reagendamento_cancelamento_log_'+self.alternative_date_variables.year+'.csv')]
-    @property
-    def link(self):
-        result = 'https://justo7393.zendesk.com/explore#/pivot-table/connection/13828291/report/137369241'
-        return result
-    limit_time=60
+#     metabase_date_format = Metabase_date_format()
+#     machine_info = MachineInfo()
+#     alternative_date_variables = Alternative_date_variables()
+#     instant_notification =False
+#     channel='bot_channel'
+#     forced_try=True
+#     name='Cliente Reagendamento Cancelamento LOG'
+#     original_file_name='Cliente'
+#     @property
+#     def default_destination_path(self):
+#         return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\12 - FUNIL DE OPS\Bases\cliente_reagendamento_cancelamento_log\cliente_reagendamento_cancelamento_log_'+self.alternative_date_variables.year+'.csv')]
+#     @property
+#     def link(self):
+#         result = 'https://justo7393.zendesk.com/explore#/pivot-table/connection/13828291/report/137369241'
+#         return result
+#     limit_time=60
 
 class ZReport05():
 
@@ -1540,93 +1540,93 @@ class GReport03():
         return result
     limit_time=20
 
-class GReport04():
+# class GReport04():
 
-    time_formats = Time_formats()
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification=False
-    sheets_report=True
-    channel='bot_channel'
-    forced_try=True
-    name='Conferencia de Devolução dos Pedidos'
-    original_file_name='Conferencia de devolução dos pedidos'
-    @property
-    def default_destination_path(self):
-        return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\17 - MOTORISTAS\Bases\Base Google Sheets - Conferencia de Pedidos Devolvidos\Conferencia de Pedidos Devolvidos.csv')
-                ]
-    @property
-    def link(self):
-        result='https://docs.google.com/spreadsheets/d/1t-CcamEJd4QzrulsmSUCjWUUM4fM2yi5N0SBuF5ztu4/edit#gid=1265549727'
-        return result   
-    limit_time=20
+#     time_formats = Time_formats()
+#     metabase_date_format = Metabase_date_format()
+#     machine_info = MachineInfo()
+#     alternative_date_variables = Alternative_date_variables()
+#     instant_notification=False
+#     sheets_report=True
+#     channel='bot_channel'
+#     forced_try=True
+#     name='Conferencia de Devolução dos Pedidos'
+#     original_file_name='Conferencia de devolução dos pedidos'
+#     @property
+#     def default_destination_path(self):
+#         return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\17 - MOTORISTAS\Bases\Base Google Sheets - Conferencia de Pedidos Devolvidos\Conferencia de Pedidos Devolvidos.csv')
+#                 ]
+#     @property
+#     def link(self):
+#         result='https://docs.google.com/spreadsheets/d/1t-CcamEJd4QzrulsmSUCjWUUM4fM2yi5N0SBuF5ztu4/edit#gid=1265549727'
+#         return result   
+#     limit_time=20
     
-class GReport05():
+# class GReport05():
 
-    time_formats = Time_formats()
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification=False
-    sheets_report=True
-    channel='bot_channel'
-    forced_try=True
-    name='Produtividade Last Mile (respostas) V3 '
-    original_file_name='Produtividade Last Mile'
-    @property
-    def default_destination_path(self):
-        return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\17 - MOTORISTAS\Bases\Base Google Sheets - Produtividade dos Puxadores de Pedidos\Produtividade dos Puxadores de Pedidos.csv')
-                ]
-    @property
-    def link(self):
-        result='https://docs.google.com/spreadsheets/d/1VU4U9olMLgtGxxCsE2dfOjriL280iSTVmzkwx2iYWXk/edit#gid=1780023177'
-        return result
-    limit_time=20
+#     time_formats = Time_formats()
+#     metabase_date_format = Metabase_date_format()
+#     machine_info = MachineInfo()
+#     alternative_date_variables = Alternative_date_variables()
+#     instant_notification=False
+#     sheets_report=True
+#     channel='bot_channel'
+#     forced_try=True
+#     name='Produtividade Last Mile (respostas) V3 '
+#     original_file_name='Produtividade Last Mile'
+#     @property
+#     def default_destination_path(self):
+#         return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\17 - MOTORISTAS\Bases\Base Google Sheets - Produtividade dos Puxadores de Pedidos\Produtividade dos Puxadores de Pedidos.csv')
+#                 ]
+#     @property
+#     def link(self):
+#         result='https://docs.google.com/spreadsheets/d/1VU4U9olMLgtGxxCsE2dfOjriL280iSTVmzkwx2iYWXk/edit#gid=1780023177'
+#         return result
+#     limit_time=20
     
-class GReport06():
+# class GReport06():
 
-    time_formats = Time_formats()
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification=False
-    sheets_report=True
-    channel='bot_channel'
-    forced_try=True
-    name='Devolução de Pedidos e Produtos CX (respostas)'
-    original_file_name='Devolução de pedidos'
-    @property
-    def default_destination_path(self):
-        return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\17 - MOTORISTAS\Bases\Base Google Sheets - Forms de Devolucao de Pedidos\Devolução de Pedidos e Produtos CX (respostas).csv')
-                ]
-    @property
-    def link(self):
-        result='https://docs.google.com/spreadsheets/d/1LtnEHSM_llT7SvFGLiOiax6V5Q2vLD-K91fkz1He27E/edit#gid=1333431273'
-        return result
-    limit_time=20
+#     time_formats = Time_formats()
+#     metabase_date_format = Metabase_date_format()
+#     machine_info = MachineInfo()
+#     alternative_date_variables = Alternative_date_variables()
+#     instant_notification=False
+#     sheets_report=True
+#     channel='bot_channel'
+#     forced_try=True
+#     name='Devolução de Pedidos e Produtos CX (respostas)'
+#     original_file_name='Devolução de pedidos'
+#     @property
+#     def default_destination_path(self):
+#         return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\17 - MOTORISTAS\Bases\Base Google Sheets - Forms de Devolucao de Pedidos\Devolução de Pedidos e Produtos CX (respostas).csv')
+#                 ]
+#     @property
+#     def link(self):
+#         result='https://docs.google.com/spreadsheets/d/1LtnEHSM_llT7SvFGLiOiax6V5Q2vLD-K91fkz1He27E/edit#gid=1333431273'
+#         return result
+#     limit_time=20
     
-class GReport07():
+# class GReport07():
 
-    time_formats = Time_formats()
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification=False
-    sheets_report=True
-    channel='bot_channel'
-    forced_try=True
-    name='Pesquisa de Motoristas BR'
-    original_file_name='Pesquisa Motoristas'
-    @property
-    def default_destination_path(self):
-        return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\17 - MOTORISTAS\Bases\Base Google Sheets - Pesquisa Motoristas\Pesquisa de Motoristas.csv')
-                ]
-    @property
-    def link(self):
-        result='https://docs.google.com/spreadsheets/d/1h-9u7HtGql9DIIpGJBw5dDRqc6s9Q0tquCJUb-v7erw/edit#gid=0'
-        return result
-    limit_time=20
+#     time_formats = Time_formats()
+#     metabase_date_format = Metabase_date_format()
+#     machine_info = MachineInfo()
+#     alternative_date_variables = Alternative_date_variables()
+#     instant_notification=False
+#     sheets_report=True
+#     channel='bot_channel'
+#     forced_try=True
+#     name='Pesquisa de Motoristas BR'
+#     original_file_name='Pesquisa Motoristas'
+#     @property
+#     def default_destination_path(self):
+#         return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\17 - MOTORISTAS\Bases\Base Google Sheets - Pesquisa Motoristas\Pesquisa de Motoristas.csv')
+#                 ]
+#     @property
+#     def link(self):
+#         result='https://docs.google.com/spreadsheets/d/1h-9u7HtGql9DIIpGJBw5dDRqc6s9Q0tquCJUb-v7erw/edit#gid=0'
+#         return result
+#     limit_time=20
 
 class GReport08(): 
 
@@ -1638,7 +1638,7 @@ class GReport08():
     channel='bot_channel'
     forced_try=True
     name='Survey Master BR CX CSAT BR'
-    original_file_name='Survey Master BR'
+    original_file_name='Survey Master BR' 
     @property
     def default_destination_path(self):
         return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\13 - BASES CX\Bases\Bases Pesquisa CSAT\survey_master_br_cx_csat_br.csv')]
@@ -1870,27 +1870,6 @@ class GReport19():
         result = 'https://docs.google.com/spreadsheets/d/1HCq3TcfJaTA0Wm6NRyFubhqIh1NoM3sksqdAl_e0Ego/edit#gid=0'
         return result
     limit_time=75  
-
-class GReport19():
-
-    time_formats = Time_formats()
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification=False
-    channel='bot_channel'
-    forced_try=True
-    name='Lista de Faltantes Por Dia BR'
-    original_file_name='FALTANTES_2023'
-    @property
-    def default_destination_path(self):
-        path_list = [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\10 - DASHBOARD FALTANTES\Bases\lista_de_faltantes_por_dia_br.xlsx')]
-        return path_list
-    @property
-    def link(self):
-        result = 'https://docs.google.com/spreadsheets/d/1HCq3TcfJaTA0Wm6NRyFubhqIh1NoM3sksqdAl_e0Ego/edit#gid=0'
-        return result
-    limit_time=75  
     
 class GReport20():
 
@@ -1948,7 +1927,7 @@ class GReport22():
     original_file_name='Agendamento Justo_Planejamento de Capacidades_Ajustado'
     @property
     def default_destination_path(self):
-        path_list = [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\7 - ACOMPANHAMENTO OCS\Agendamento.csv')]
+        path_list = [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\7 - ACOMPANHAMENTO OCS\Agendamento Novo.csv')]
         return path_list
     @property
     def link(self):
@@ -1998,6 +1977,27 @@ class GReport24():
         return result
     limit_time=85
 
+class GReport25():
+
+    time_formats = Time_formats()
+    metabase_date_format = Metabase_date_format()
+    machine_info = MachineInfo()
+    alternative_date_variables = Alternative_date_variables()
+    instant_notification=False
+    channel='bot_channel'
+    forced_try=True
+    name='Acoes Comerciais'
+    original_file_name='Consolidado Ações'
+    @property
+    def default_destination_path(self):
+        path_list = [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\29 - Tracking de Ações Comerciais\Acoes Comerciais.xlsx')]
+        return path_list
+    @property
+    def link(self):
+        result = 'https://docs.google.com/spreadsheets/d/1RtVvYIYpNB7zL4Bjsvrg93o2lnY2WYZSCZqEUk1XbH4/edit#gid=0'
+        return result
+    limit_time=85
+
 # Playvox
 
 class PReport01():
@@ -2022,29 +2022,29 @@ class PReport01():
         return result
     limit_time=25
     
-# Locus
+# # Locus
 
-class LReport01():
+# class LReport01():
     
-    time_formats = Time_formats()
-    metabase_date_format = Metabase_date_format()
-    machine_info = MachineInfo()
-    alternative_date_variables = Alternative_date_variables()
-    instant_notification=False
-    sheets_report=True
-    channel='bot_channel'
-    forced_try=True
-    name='Task Export (Locus)'
-    original_file_name='task-export'
-    @property
-    def default_destination_path(self):
-        return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\17 - MOTORISTAS\Bases\Base Locus\task-export-'+self.alternative_date_variables.yesterday_hyphen_separated_mm_dd_yyyy+'.csv')
-                ]
-    @property
-    def link(self):
-        result='https://justo-br.locus-dashboard.com/#/client/justo-br/live_view/tasks?selectedStatus=all'
-        return result
-    limit_time=45 
+#     time_formats = Time_formats()
+#     metabase_date_format = Metabase_date_format()
+#     machine_info = MachineInfo()
+#     alternative_date_variables = Alternative_date_variables()
+#     instant_notification=False
+#     sheets_report=True
+#     channel='bot_channel'
+#     forced_try=True
+#     name='Task Export (Locus)'
+#     original_file_name='task-export'
+#     @property
+#     def default_destination_path(self):
+#         return [Path(r'G:'+self.machine_info.pathlang0+r'\Data & Performance\Relatórios\17 - MOTORISTAS\Bases\Base Locus\task-export-'+self.alternative_date_variables.yesterday_hyphen_separated_mm_dd_yyyy+'.csv')
+#                 ]
+#     @property
+#     def link(self):
+#         result='https://justo-br.locus-dashboard.com/#/client/justo-br/live_view/tasks?selectedStatus=all'
+#         return result
+#     limit_time=45 
 
 # Extranet
 

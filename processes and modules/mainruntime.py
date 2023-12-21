@@ -9,10 +9,10 @@ from pytesseract import pytesseract
 import time
 from verifiers import process_registrant
 from datetimetools import Timer
-#from apitools import load_to_gsheets
+from webactions import MetabaseExtractor
 from datetimetools import Alternative_date_variables
 from etltools import FileTransformer
-# preciso de uma lógica que limpe os downloads a cada extração
+
 pyautogui.FAILSAFE = False
 
 """
@@ -230,40 +230,11 @@ class ProcessRunner:
             print("ProcessRunner: Chrome window not found.")
             
     def download_metabase(self):
-            
-        pyautogui.sleep(7)
-        pyautogui.click(881, 606)
-        pyautogui.click(941, 614)
-        pyautogui.click(944, 613)
-        pyautogui.sleep(5)
-
-        screen = VisualGuide(self.limit_time,8)
-        screen.match_my_area()
-        
-        if not screen.match_my_area() == True:
-
-            self.error = True
-
-        else:
-
+        try:     
+            mb_action = MetabaseExtractor(self.limit_time,self.link,self.destination_list,self.file_format)
+            mb_action.extract_data()
+        except:
             pass
-
-        pyautogui.click(1834, 1001)
-        pyautogui.sleep(3)
-
-        self.destination_list = [
-            str(i) for i in self.destination_list
-        ]  # list comprehension from winpath to string obj
-        self.first_element = self.destination_list[0]
-        format = self.first_element[-3:]
-
-        if format == "csv":
-
-            pyautogui.click(1572, 780)
-
-        else:
-
-            pyautogui.click(1599, 856)
 
     def find_file(self):
      
@@ -448,39 +419,43 @@ class ProcessRunner:
         
         self.process_runner=ProcessRunner(self.report)
         time.sleep(4)
-        self.process_runner.close_browser()           
         self.process_runner.timer.start_count()
-        self.process_runner.check_old_files()
-        self.process_runner.win_r(str('Chrome'))
-        self.process_runner.set_link()
-        
         if self.process_runner.error == False and self.first_class_letter   == 'M':
             self.process_runner.download_metabase()
-        elif self.process_runner.error == False and self.first_class_letter == 'A':
-            pass
-        elif self.process_runner.error == False and self.first_class_letter == 'G':
-            self.process_runner.download_gsheets()
-        elif self.process_runner.error == False and self.first_class_letter == 'P':
-            self.process_runner.download_playvox()
-        elif self.process_runner.error == False and self.first_class_letter == 'L':
-            self.process_runner.download_locus()
-        elif self.process_runner.error == False and self.first_class_letter == 'Z':
-            self.process_runner.download_zendesk()
-        elif self.process_runner.error == False and self.first_class_letter == 'E':
-            self.process_runner.download_extranet()
+            self.process_runner.check_error()
         else:
-            pass
-        
-        if self.process_runner.error == False:
-            self.process_runner.find_file()
-        
-        if self.process_runner.error == False and self.first_class_letter == 'L':
-            self.process_runner.send_to_destination_transformed_csv()
-        elif self.process_runner.error == False and self.first_class_letter != 'L':
-            self.process_runner.send()
-            
-        if self.process_runner.error == False:
-            self.process_runner.close_browser()
+            self.process_runner.check_error()
+        if not self.process_runner.error == False and self.first_class_letter   == 'M':
+
+            self.process_runner.close_browser()           
+            self.process_runner.timer.start_count()
             self.process_runner.check_old_files()
+            self.process_runner.win_r(str('Chrome'))
+            self.process_runner.set_link()
             
-        self.process_runner.check_error()
+            if  self.process_runner.error  == False and self.first_class_letter == 'G':
+                self.process_runner.download_gsheets()
+            elif self.process_runner.error == False and self.first_class_letter == 'P':
+                self.process_runner.download_playvox()
+            elif self.process_runner.error == False and self.first_class_letter == 'L':
+                self.process_runner.download_locus()
+            elif self.process_runner.error == False and self.first_class_letter == 'Z':
+                self.process_runner.download_zendesk()
+            elif self.process_runner.error == False and self.first_class_letter == 'E':
+                self.process_runner.download_extranet()
+            else:
+                pass
+            
+            if self.process_runner.error == False:
+                self.process_runner.find_file()
+            
+            if self.process_runner.error == False and self.first_class_letter == 'L':
+                self.process_runner.send_to_destination_transformed_csv()
+            elif self.process_runner.error == False and self.first_class_letter != 'L':
+                self.process_runner.send()
+                
+            if self.process_runner.error == False:
+                self.process_runner.close_browser()
+                self.process_runner.check_old_files()
+                
+            self.process_runner.check_error()

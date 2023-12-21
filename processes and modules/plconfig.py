@@ -45,8 +45,7 @@ class FolderUpperCleaner:
 
         dir = r'C:/Users/Justo Dashboard/Downloads/*'
         
-        try:            
-
+        try:        
             files = glob.glob(dir)
             self.delete(files)
 
@@ -87,6 +86,7 @@ class MachineInfo():
 class SecInfo:
 
     def __init__(self):
+
         self.config = self._read_secret('G:'+MachineInfo().pathlang1+'\API KEYS\Secrets\9eYRqXm6eZTfu6P3hsRdWw.txt')
         self.sas_url_unilever = self.config.get('UNILEVER_BLOB_ADDRESS_TO_CODE')
         self.sas_url_ambev    = self.config.get('AMBEV_BLOB_ADDRESS_TO_CODE')
@@ -95,12 +95,18 @@ class SecInfo:
         self.a_stock          = self.config.get('A_STOCK')
         self.a_product        = self.config.get('A_PRODUCT')
         self.a_warehouse      = self.config.get('A_WAREHOUSE')
+        self.a_sellin         = self.config.get('A_SELLIN')
         self.a_host           = self.config.get('A_HOST')
         self.a_user           = self.config.get('A_USER')
         self.apk_path         = self.config.get('APK_PATH')
         self.p1               = self.config.get('p_1')
         self.u_stock          = self.config.get('U_STOCK')
         self.pc_sales         = self.config.get('PC_SALES')
+        self.mb_cookies       = self.config.get('MB_COOKIES')
+        self.mb_url           = self.config.get('MB_URL')
+        self.xusr             = self.config.get('X_USR')
+        self.xpss             = self.config.get('X_PSS')
+        self.wlt_query        = self.config.get('WLT_QUERY')        
 
     def _read_secret(self, filepath):
         try:
